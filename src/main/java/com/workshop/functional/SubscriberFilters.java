@@ -13,6 +13,9 @@ public class SubscriberFilters {
                 || subscriber.getMonthsRemaining() == 1;
     }
     public static SubscriberFilter byPlan(Plan plan) {
+        if (plan == null) {
+            throw new IllegalArgumentException("Plan cannot be null");
+        }
         return subscriber -> subscriber.getPlan() == plan;
     }
     public static SubscriberFilter paying() {

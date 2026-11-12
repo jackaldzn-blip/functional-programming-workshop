@@ -119,4 +119,9 @@ class SubscriberFiltersTest {
 
         assertTrue(SubscriberFilters.expiring().matches(subscriber));
     }
+    @Test
+    void byPlanShouldThrowExceptionWhenPlanIsNull() {
+        assertThrows(IllegalArgumentException.class,
+                () -> SubscriberFilters.byPlan(null));
+    }
 }
