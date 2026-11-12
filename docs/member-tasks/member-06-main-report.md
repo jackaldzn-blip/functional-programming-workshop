@@ -32,7 +32,7 @@ Enter your choice:
 
 | Option | What the console should do | Existing code to reuse |
 |---|---|---|
-| 1. Show all | Print subscribers and their ID, email, plan, active status and remaining months | `SubscriberDAO.findAll()` |
+| 1. Show all | Print subscribers and their ID, email, plan, active status and remaining months; `Subscriber.toString()` is available for readable output | `SubscriberDAO.findAll()` |
 | 2. Show active | Print only active subscribers | `SubscriberFilters.active()` + `SubscriberProcessor.findSubscribers()` |
 | 3. Show expiring | Print subscribers with **0 or 1** month remaining, including inactive ones | `SubscriberFilters.expiring()` + processor |
 | 4. Active and expiring | Print only active subscribers with **0 or 1** month remaining | `SubscriberFilters.activeAndExpiring()` + processor |
@@ -52,8 +52,9 @@ Enter your choice:
 4. Show a meaningful message when a search has no results, or an action finds nobody eligible.
 5. **Changes made by options 7 or 8 remain visible during the same console session.** Do not silently reset the list after each action. No persistence across program restarts is required.
 6. For independent scenario demonstrations and JUnit assertions, create **fresh sample data** before each mutation scenario; do not rely on the order that a human selected console options.
-7. Keep business rules in the members' functional classes. `Main` is responsible for user input, calling those APIs and showing results, **not duplicating their implementations**.
-8. Avoid changing shared method signatures or other members' files without agreement. Use the [agreed contracts](../contracts.md).
+7. Print subscribers in a readable format. Anas's `Subscriber.toString()` override is available, so you can print subscriber objects directly without duplicating formatting logic.
+8. Keep business rules in the members' functional classes. `Main` is responsible for user input, calling those APIs and showing results, **not duplicating their implementations**.
+9. Avoid changing shared method signatures or other members' files without agreement. Use the [agreed contracts](../contracts.md).
 
 ### Example initial results (before any changes)
 
