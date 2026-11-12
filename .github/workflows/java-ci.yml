@@ -16,8 +16,8 @@ jobs:
           distribution: temurin
           java-version: '25'
           cache: maven
-      - name: Build and run tests
-        run: mvn -B --no-transfer-progress test
+      - name: Clean, build and verify
+        run: mvn -B --no-transfer-progress clean verify
       - name: Verify tests were executed
         run: |
           python3 - <<'PY'

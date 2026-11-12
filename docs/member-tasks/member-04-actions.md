@@ -31,9 +31,9 @@ Unit tests depend on Member 1 model. The two scenario tests additionally need Me
 ## Definition of done
 
 - [x] One-method action functional interface; extension and deactivation actions. An additional `activate()` action is also implemented.
-- [ ] Unit tests pass; unit coverage is written, and CI execution is pending.
+- [x] Unit tests pass: 7 action tests passed in Java 25 CI; 27 total project tests passed with no failures.
 - [ ] **Scenario 4 and 5** JUnit assertions pass with all nonmatching subscribers untouched.
-- [ ] PR records commands, expected/observed results, and scenario details. The feature branch is pushed; PR creation/review is still pending.
+- [ ] Include a complete implementation summary and verification evidence in the shared final report; PR #8 was merged with an incomplete description.
 - [ ] Send Member 6 technical summary, test evidence, and PR URL.
 
-Scenario tests 4 and 5 are waiting on Member 3's filters and Member 5's processor. The local environment did not have Java installed, so test results must be confirmed by CI after the PR is opened.
+**Current status:** [PR #8](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/8) is merged. The action component provides `extendByMonths`, `deactivate`, and an optional `activate` helper (not part of the original assignment). The seven action unit tests passed in CI. Workshop scenarios **4 and 5 remain pending** until the required filters and processor are integrated; their results must not be marked complete prematurely.
