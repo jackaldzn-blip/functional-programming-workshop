@@ -1,61 +1,46 @@
-# Functional Programming Workshop — Java 25 Team Starter
+# Functional Programming Workshop
 
-**Repository:** https://github.com/jackaldzn-blip/functional-programming-workshop
+A six-member **Java 25 / Maven** project implementing a subscription list management system based on the [workshop assignment](assignment/Functional_Programming_Workshop.md).
 
-A six-person Java 25 + Maven workshop for implementing the subscription list management system from the [original Lexicon assignment](assignment/Functional_Programming_Workshop.md).
+The exercise demonstrates object-oriented modeling and **functional programming** through reusable selection filters, actions and a processor. Development is shared across the team; see [TEAM.md](TEAM.md) for owners and progress.
 
-**The original Java starter contained empty class shells; work is now progressing through individual member contributions.** Review the current source and Pull Requests for implementation status.
+## Workshop scope
 
-## Start here
+- **Part 1:** Model subscribers and plans, store and retrieve subscribers, apply five selection rules (active, expiring, active and expiring, by plan, paying), and perform two actions (extend and deactivate).
+- **Part 2 (optional):** Six JUnit 5 scenarios. The team has agreed to implement them, with tests distributed across members.
+- **Team design:** Small helper classes, in-memory storage and a console demonstration. These implementation choices extend the supplied conceptual UML without changing its required types or rules.
 
-1. [TEAM.md — member names, ownership, PR status](TEAM.md)
-2. [Detailed task table and individual briefs](docs/team-tasks.md)
-3. [Technical UML in Markdown (Mermaid)](docs/technical-uml.md)
-4. [Agreed Java API contracts](docs/contracts.md)
-5. [Shared test ownership and scenario expectations](docs/testing-responsibilities.md)
-6. [Sample records and expected results](docs/example-scenarios.md)
-7. [Coverage of original workshop requirements](docs/workshop-coverage.md)
-8. [Git collaboration workflow](CONTRIBUTING.md)
+## Project components
 
-## Work assignment
+| Component | Purpose |
+|---|---|
+| `Subscriber`, `Plan` | Subscriber data and plan types |
+| `SubscriberDAO` | Store and retrieve subscribers |
+| `SubscriberFilter`, `SubscriberFilters` | Functional selection rules |
+| `SubscriberAction`, `SubscriberActions` | Functional subscription updates |
+| `SubscriberProcessor` | Apply filters and actions to subscriber lists |
+| `Main` | Run and demonstrate the system |
+| JUnit 5 tests | Verify models, components and workshop scenarios |
 
-| Member (GitHub) | Code to implement | JUnit test ownership | Extra responsibility |
-|---|---|---|---|
-| **1 — [Anas](https://github.com/jackaldzn-blip) (@jackaldzn-blip)** | `Subscriber`, `Plan` | Model tests | Team Lead, reviews and integration |
-| **2 — [Veselina](https://github.com/vlinakonsa) (@vlinakonsa)** | `SubscriberDAO` | DAO tests | Data-access checks |
-| **3 — [Jay](https://github.com/JayB111) (@JayB111)** | `SubscriberFilter`, `SubscriberFilters` | Unit tests + **scenarios 1,2** | Five filter rules |
-| **4 — [Tuku](https://github.com/tukue) (@tukue)** | `SubscriberAction`, `SubscriberActions` | Unit tests + **scenarios 4,5** | Two actions |
-| **5 — [Carl](https://github.com/Matojotam) (@Matojotam)** | `SubscriberProcessor` | Unit tests + **scenario 3** | Processing integration |
-| **6 — [Padma](https://github.com/Padmaqaauto) (@Padmaqaauto)** | `Main` (interactive console menu) | **Scenario 6** + manual menu checks | User-facing demonstration + shared final report |
+## Build and run
 
-**Report contributions are shared:** every member sends their own implementation explanation, PR URL, test evidence and limitations to Member 6. Padma (Member 6) compiles the final report; Anas (Member 1, Team Lead) approves it.
-
-## Original requirements and design choices
-
-Part 1 requires six conceptual types and seven rules. Part 2 offers six **optional** JUnit test scenarios; the team elects to implement them across Members 3–6. Additional helpers (`SubscriberFilters`, `SubscriberActions`, `Main`), constructor details, storage and return semantics are documented **team design decisions**, not instructor-mandated features. **The interactive console menu is an optional team-approved extension** owned by Padma; it does not change the workshop UML or the original JUnit scenario allocation.
-
-## Environment
-
-- **JDK 25** (Temurin or another compatible distribution)
-- Maven
-- JUnit 5 (configured in `pom.xml`)
-
-The project targets Java 25 through `pom.xml` (`maven.compiler.release=25`), `.java-version` and GitHub Actions Temurin 25. Java 25-specific syntax is not necessary for the exercise.
+Requires **JDK 25** and **Maven**. The project targets Java 25 in `pom.xml` and GitHub Actions.
 
 ```bash
-java -version
-mvn clean compile
-mvn test
 mvn clean verify
 mvn exec:java
 ```
 
-`mvn exec:java` starts Padma's interactive menu once `Main.main` and the dependent classes are implemented. Check the actual JUnit test count when running `mvn clean verify`; successful compilation alone does not prove the workshop rules work.
+`mvn clean verify` compiles the project and runs implemented tests. `mvn exec:java` launches the current `Main` application. Functional coverage depends on which team contributions have been integrated; a successful build alone does not establish that every scenario is complete.
 
-## Interactive console extension (Member 6 — Padma)
+## Teamwork and documentation
 
-Padma has agreed to make `Main.java` an **interactive terminal menu**, using a simple Java input loop. The menu offers: show all, active, expiring, active-and-expiring, filter by plan, paying subscribers, extend eligible active paying expiring subscriptions by **3 example months**, deactivate expired FREE subscribers, and exit (`0`). The menu should handle invalid input and keep changes during the current session. It must call the DAO, processor, filters and actions written by the other members rather than duplicate their rules. See [Padma's detailed task brief](docs/member-tasks/member-06-main-report.md) for acceptance checks.
+Each member owns implementation and tests, works on a feature branch and submits a pull request to `main`. Team members contribute their results to the shared report.
 
-## Integration order
+- [Team roster and responsibilities](TEAM.md)
+- [Task allocations and individual briefs](docs/team-tasks.md)
+- [Technical UML](docs/technical-uml.md) and [Java API contracts](docs/contracts.md)
+- [Testing responsibilities](docs/testing-responsibilities.md), [shared sample cases](docs/example-scenarios.md) and [workshop coverage](docs/workshop-coverage.md)
+- [Contribution workflow](CONTRIBUTING.md) and [report template](docs/final-report-template.md)
 
-Model/API → DAO, filters, actions → Processor → Scenario integration tests and Main demo → Shared report and lead review. Branches may be worked on concurrently, but dependent scenario tests should not be reported as passing before all required components are merged.
+Detailed implementation instructions—including console behavior—belong in the relevant member brief, not in this project overview.

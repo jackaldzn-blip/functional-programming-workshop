@@ -1,36 +1,20 @@
 # Team roster and responsibilities
 
-**Repository:** https://github.com/jackaldzn-blip/functional-programming-workshop  
-**Group:** Six members, including the team lead; all six contribute Java code and share testing.  
-**Java version:** Java 25.  
-**Assignment status:** Agreed by the group on 12 November 2026.
+Six members contribute to the **Functional Programming Workshop** (Java 25). The full task breakdown and test expectations are maintained in the [team tasks](docs/team-tasks.md) and [testing guide](docs/testing-responsibilities.md).
 
-The names and GitHub usernames below are recorded exactly as provided by the team. This public table contains no private contact information.
+| Member | Name | GitHub | Implementation | Tests | Other responsibility | Status |
+|---|---|---|---|---|---|---|
+| **1 — Lead** | Anas | [@jackaldzn-blip](https://github.com/jackaldzn-blip) | `Subscriber.java`, `Plan.java` | `SubscriberModelTest.java` | Coordination, reviews and integration | Model merged |
+| **2** | Veselina | [@vlinakonsa](https://github.com/vlinakonsa) | `SubscriberDAO.java` | `SubscriberDaoTest.java` | Data-access checks | Assigned |
+| **3** | Jay | [@JayB111](https://github.com/JayB111) | `SubscriberFilter.java`, `SubscriberFilters.java` | `SubscriberFiltersTest.java`; scenarios 1–2 | Selection rules | Assigned |
+| **4** | Tuku | [@tukue](https://github.com/tukue) | `SubscriberAction.java`, `SubscriberActions.java` | `SubscriberActionsTest.java`; scenarios 4–5 | Subscription updates | Assigned |
+| **5** | Carl | [@Matojotam](https://github.com/Matojotam) | `SubscriberProcessor.java` | `SubscriberProcessorTest.java`; scenario 3 | Processing and integration | Assigned |
+| **6** | Padma | [@Padmaqaauto](https://github.com/Padmaqaauto) | `Main.java` | `PlanScenarioTest.java`; scenario 6 | Console demonstration and shared report coordination | In progress |
 
-| Member | Name | GitHub username | Coding responsibility | Testing responsibility | Additional role | Status | Pull request |
-|---|---|---|---|---|---|---|---|
-| **1 — Lead** | Anas | [@jackaldzn-blip](https://github.com/jackaldzn-blip) | `Subscriber.java`, `Plan.java` | `SubscriberModelTest.java` | Coordination, code review and integration | Assigned | — |
-| **2** | Veselina | [@vlinakonsa](https://github.com/vlinakonsa) | `SubscriberDAO.java` | `SubscriberDaoTest.java` | Data access verification | Assigned | — |
-| **3** | Jay | [@JayB111](https://github.com/JayB111) | `SubscriberFilter.java`, `SubscriberFilters.java` | `SubscriberFiltersTest.java`, scenarios **1–2** | Filtering rules | Assigned | — |
-| **4** | Tuku | [@tukue](https://github.com/tukue) | `SubscriberAction.java`, `SubscriberActions.java` | `SubscriberActionsTest.java`, scenarios **4–5** | Subscription updates | Assigned | — |
-| **5** | Carl | [@Matojotam](https://github.com/Matojotam) | `SubscriberProcessor.java` | `SubscriberProcessorTest.java`, scenario **3** | Processing and integration | Assigned | — |
-| **6** | Padma | [@Padmaqaauto](https://github.com/Padmaqaauto) | `Main.java` (interactive console) | `PlanScenarioTest.java`, scenario **6** + manual menu checks | Interactive menu and shared final report coordination | Assigned | — |
+Status refers to the **assigned work**, not overall project completion. Contributions and reviews are tracked through GitHub branches and pull requests.
 
-**Status flow:** Assigned → In progress → PR review → Done. Update the status and PR link as each task progresses.
+## Working together
 
-## Individual instructions
+Each member implements their own component, writes the assigned tests, and submits work through a pull request for review. Everyone supplies a short implementation summary and **actual** test results for the shared report. Padma assembles the report from all six contributions; Anas conducts the final review.
 
-- [Full team task guide](docs/team-tasks.md)
-- [Testing responsibilities](docs/testing-responsibilities.md)
-- [Anas — Member 1: Model + leadership](docs/member-tasks/member-01-model-lead.md)
-- [Veselina — Member 2: DAO](docs/member-tasks/member-02-dao.md)
-- [Jay — Member 3: Filters + scenarios 1–2](docs/member-tasks/member-03-filters.md)
-- [Tuku — Member 4: Actions + scenarios 4–5](docs/member-tasks/member-04-actions.md)
-- [Carl — Member 5: Processor + scenario 3](docs/member-tasks/member-05-processor.md)
-- [Padma — Member 6: Interactive console + scenario 6 + report](docs/member-tasks/member-06-main-report.md)
-
-## Contribution expectations
-
-Every member implements the assigned code, tests their own component, opens at least one pull request, and supplies a **3–5 sentence implementation summary, PR link, and real test evidence**.
-
-Padma assembles the final report from contributions provided by **all six members**; Anas reviews the completed report. The assignment is recorded here, but collaborator invitations and GitHub Issue assignments are separate actions.
+See the [individual task briefs](docs/team-tasks.md) and [contribution workflow](CONTRIBUTING.md) for instructions.

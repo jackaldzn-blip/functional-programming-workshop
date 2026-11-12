@@ -30,7 +30,7 @@ The workshop provides rules but **no example subscriber records** or fixed subsc
 
 **Scenario 5 — deactivate expired FREE subscribers:** eligible IDs are `1, 4` (both FREE with 0 months). ID 1 changes `active: true → false`; ID 4 remains false (idempotent). All other active states remain unchanged. The `applyToMatching` return list contains `1, 4`.
 
-## Boundary cases Member 6 should test
+## Boundary cases for component and scenario tests
 
 - 0 months = expiring and expired; 1 month = expiring but not expired; 2 months = not expiring.
 - Inactive subscriber may still be expiring; `activeAndExpiring` should not match them.

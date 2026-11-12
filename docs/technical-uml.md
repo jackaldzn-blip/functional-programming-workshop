@@ -1,6 +1,6 @@
 # Technical UML — Markdown Mermaid diagram
 
-The diagram below is in this `.md` file so GitHub renders it directly. **The original starter contained empty classes/interfaces**; each assigned member implements the agreed methods. Original workshop constructs are `Subscriber`, `Plan`, `SubscriberDAO`, `SubscriberFilter`, `SubscriberAction` and `SubscriberProcessor`. The `SubscriberFilters`, `SubscriberActions`, `Main` classes and their additional members are the **team's design**, not additions required by the instructor's conceptual UML. The team has also approved an **interactive console menu** inside `Main`; this is presentation/input behavior, not a new UML domain class.
+This Mermaid diagram shows the workshop's six conceptual types—`Subscriber`, `Plan`, `SubscriberDAO`, `SubscriberFilter`, `SubscriberAction` and `SubscriberProcessor`—alongside the team's supporting helpers and entry point. The additional elements are implementation choices, not extra instructor requirements.
 
 ```mermaid
 classDiagram
@@ -96,6 +96,6 @@ classDiagram
 | 3 | `SubscriberFilter`, `SubscriberFilters` |
 | 4 | `SubscriberAction`, `SubscriberActions` |
 | 5 | `SubscriberProcessor`; processor unit tests and scenario 3 |
-| 6 — Padma | `Main` (interactive console menu, shown), `PlanScenarioTest` (test class not shown), shared final report coordination |
+| 6 | `Main`; `PlanScenarioTest` (test class not shown); shared report coordination |
 
-**Important:** In the original UML, `applyToMatching` returns a list but its contents are unspecified. We have chosen to return the **matched, processed subscribers**. See [contracts.md](contracts.md). The `Subscriber.toString()` override is a team convenience for console readability, not part of the instructor's original UML. Keep this diagram synchronized with the final Java API.
+**Design note:** The workshop leaves the contents of the `applyToMatching` result unspecified; the team returns the matched, processed subscribers. The `Subscriber.toString()` override supports readable output. See [contracts.md](contracts.md) for the agreed API.
