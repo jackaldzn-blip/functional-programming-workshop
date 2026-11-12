@@ -1,7 +1,7 @@
 # Member 6 — Padma — Interactive console, scenario 6 and report coordination
 
 **Assigned member:** Padma — [@Padmaqaauto](https://github.com/Padmaqaauto)  
-**Branch:** `feature/main-demo-and-report`  
+**Initial merged branch:** `feature/main` ([PR #3](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/3)); create a new branch/PR for unfinished work  
 **Owned:** `src/main/java/com/workshop/Main.java`, `src/test/java/com/workshop/PlanScenarioTest.java`, `docs/final-report.md` (created from the template).
 
 ## Goal
@@ -12,7 +12,7 @@ Build a **simple interactive Java console menu** for the workshop using the DAO,
 
 ## Part A — Interactive console application in Main.java
 
-Implement a Java `public static void main(String[] args)` entry point that initially creates the [shared seven-subscriber dataset](../example-scenarios.md) (using `SubscriberDAO` if useful), then displays this menu repeatedly:
+Extend the existing Java `public static void main(String[] args)` entry point to display the following menu repeatedly. You may keep the **12-subscriber demonstration list** already present in `Main.java`, or use the [shared seven-subscriber dataset](../example-scenarios.md). The **seven-record shared fixture** is required for the specific expected-ID assertions in scenario tests; do not silently compare the 12-record demo list against those seven-record expectations.
 
 ```text
 === Subscription Management System ===
@@ -58,7 +58,7 @@ Enter your choice:
 
 ### Example initial results (before any changes)
 
-Using the documented [shared dataset](../example-scenarios.md):
+**For the shared seven-record fixture only**, using the documented [shared dataset](../example-scenarios.md) (the existing 12-record `Main` demo will give different IDs):
 
 - Active IDs: **1,2,3,6,7**
 - Expiring IDs (0/1 month): **1,2,4,5,6**
@@ -107,7 +107,7 @@ Jay, Tuku and Carl implement workshop scenarios 1–5 in their own test classes.
 
 ## Dependencies
 
-Your `Main` functionality requires the model, DAO, filters, actions and processor to be available. You can build the menu structure earlier, but do not report integrated options as verified before dependencies have been merged.
+All required model, DAO, filter, action and processor dependencies are **now merged**. Implement the menu against these APIs and record real manual acceptance evidence; a passing compilation by itself does not prove the menu works.
 
 ## Definition of done
 

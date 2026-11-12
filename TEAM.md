@@ -6,10 +6,12 @@ Six members contribute to the **Functional Programming Workshop** (Java 25). The
 |---|---|---|---|---|---|---|
 | **1 — Lead** | Anas | [@jackaldzn-blip](https://github.com/jackaldzn-blip) | `Subscriber.java`, `Plan.java` | `SubscriberModelTest.java` | Coordination, reviews and integration | Model merged |
 | **2** | Veselina | [@vlinakonsa](https://github.com/vlinakonsa) | `SubscriberDAO.java` | `SubscriberDaoTest.java` | Data-access checks | DAO and tests merged |
-| **3** | Jay | [@JayB111](https://github.com/JayB111) | `SubscriberFilter.java`, `SubscriberFilters.java` | `SubscriberFiltersTest.java`; scenarios 1–2 | Selection rules | Assigned |
-| **4** | Tuku | [@tukue](https://github.com/tukue) | `SubscriberAction.java`, `SubscriberActions.java` | `SubscriberActionsTest.java`; scenarios 4–5 | Subscription updates | Actions and unit tests merged; scenarios 4–5 pending |
-| **5** | Carl | [@Matojotam](https://github.com/Matojotam) | `SubscriberProcessor.java` | `SubscriberProcessorTest.java`; scenario 3 | Processing and integration | Assigned |
-| **6** | Padma | [@Padmaqaauto](https://github.com/Padmaqaauto) | `Main.java` | `PlanScenarioTest.java`; scenario 6 | Console demonstration and shared report coordination | Initial Main merged; console and scenario 6 pending |
+| **3** | Jay | [@JayB111](https://github.com/JayB111) | `SubscriberFilter.java`, `SubscriberFilters.java` | `SubscriberFiltersTest.java`; scenarios 1–2 | Selection rules | Filters + 15 tests merged in [#10](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/10); scenarios 1–2 pending |
+| **4** | Tuku | [@tukue](https://github.com/tukue) | `SubscriberAction.java`, `SubscriberActions.java` | `SubscriberActionsTest.java`; scenarios 4–5 | Subscription updates | Actions merged in [#8](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/8); scenarios 4–5 passed via #11 |
+| **5** | Carl | [@Matojotam](https://github.com/Matojotam) | `SubscriberProcessor.java` | `SubscriberProcessorTest.java`; scenario 3 | Processing and integration | Processor + scenario 3 merged in [#11](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/11) |
+| **6** | Padma | [@Padmaqaauto](https://github.com/Padmaqaauto) | `Main.java` | `PlanScenarioTest.java`; scenario 6 | Console demonstration and shared report coordination | Initial Main merged in [#3](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/3); scenario 6, menu and report pending |
+
+**Verified snapshot (12 November 2026):** all five core components merged; **48 tests passed on `main`**, scenarios **3–5** passed; **1–2 and 6** pending. See [project status](docs/project-status.md) for evidence and next actions.
 
 Status refers to the **assigned work**, not overall project completion. Contributions and reviews are tracked through GitHub branches and pull requests.
 

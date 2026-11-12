@@ -38,6 +38,7 @@
   - `extendByMonths(int months): SubscriberAction` → add `months` to `monthsRemaining` when called; require `months > 0`.
   - `deactivate(): SubscriberAction` → change `active` to `false` when called.
 - Return lambda-compatible actions; do not perform actions when creating the action, only when `run` is invoked.
+- The merged implementation also includes optional `SubscriberActions.activate()`; this is a team convenience, **not** one of the seven required workshop rules.
 
 **Member 5: `com.workshop.service`**
 

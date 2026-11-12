@@ -1,6 +1,6 @@
 # Workshop requirements coverage
 
-This maps the [original assignment](../assignment/Functional_Programming_Workshop.md) to team responsibilities. It describes planned coverage; check the code and test results for implementation status.
+This maps the [original assignment](../assignment/Functional_Programming_Workshop.md) to team responsibilities. It distinguishes original requirements from the team's implementation. For the verified **12 November 2026** progress baseline, see [project status](project-status.md): all six conceptual types and seven rules are implemented and merged; 48 JUnit tests pass on `main`.
 
 ## Original conceptual UML
 
@@ -29,14 +29,14 @@ Member 5 combines filters and actions using the two required processor operation
 
 ## Part 2 — Six OPTIONAL JUnit challenge scenarios (team elected to complete)
 
-| Original scenario | JUnit owner | Test file |
-|---|---|---|
-| 1. Show active | **Jay (3)** | `SubscriberFiltersTest.java` |
-| 2. Show expiring | **Jay (3)** | `SubscriberFiltersTest.java` |
-| 3. Show active and expiring | **Carl (5)** | `SubscriberProcessorTest.java` |
-| 4. Extend active, paying, expiring | **Tuku (4)** | `SubscriberActionsTest.java` |
-| 5. Deactivate expired FREE | **Tuku (4)** | `SubscriberActionsTest.java` |
-| 6. Filter by plan | **Padma (6)** | `PlanScenarioTest.java` |
+| Original scenario | JUnit owner | Test file | Current `main` status (12 Nov 2026) |
+|---|---|---|---|
+| 1. Show active | **Jay (3)** | `SubscriberFiltersTest.java` | **Pending integrated assertion** |
+| 2. Show expiring | **Jay (3)** | `SubscriberFiltersTest.java` | **Pending integrated assertion** |
+| 3. Show active and expiring | **Carl (5)** | `SubscriberProcessorTest.java` | **Passed** via PR #11 |
+| 4. Extend active, paying, expiring | **Tuku (4)** | `SubscriberActionsTest.java` | **Passed** via PR #11 |
+| 5. Deactivate expired FREE | **Tuku (4)** | `SubscriberActionsTest.java` | **Passed** via PR #11 |
+| 6. Filter by plan | **Padma (6)** | `PlanScenarioTest.java` | **Pending**; PR #13 closed unmerged |
 
 Each member tests their own component. Member 6 also verifies the application demonstration and coordinates the shared report. See [testing responsibilities](testing-responsibilities.md) and [team tasks](team-tasks.md).
 

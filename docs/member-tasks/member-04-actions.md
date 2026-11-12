@@ -26,14 +26,14 @@ Implement the two Part 1 state-changing actions as Java lambdas; then verify the
 
 ## Dependencies
 
-Unit tests depend on Member 1 model. The two scenario tests additionally need Member 3 filters and Member 5 processor. Add the scenario assertions after those components are merged; don't change colleagues' code to make your tests compile.
+Unit tests depend on Member 1 model. The two scenario tests additionally need Member 3 filters and Member 5 processor. Those dependencies are now merged; scenarios 4–5 are already implemented. Do not change colleagues' code or take over another task without coordination.
 
 ## Definition of done
 
 - [x] One-method action functional interface; extension and deactivation actions. An additional `activate()` action is also implemented.
-- [x] Unit tests pass: 7 action tests passed in Java 25 CI; 27 total project tests passed with no failures.
-- [ ] **Scenario 4 and 5** JUnit assertions pass with all nonmatching subscribers untouched.
-- [ ] Include a complete implementation summary and verification evidence in the shared final report; PR #8 was merged with an incomplete description.
+- [x] Unit tests and integration scenarios pass: **9 action tests** within **48 project tests**, 0 failures, in Java 25 `main` CI (12 November 2026).
+- [x] **Scenario 4 and 5** JUnit assertions pass with all nonmatching subscribers untouched (merged through PR #11).
+- [ ] Provide Padma a complete personal implementation summary and verified evidence for the shared report. PR #8's brief description does not replace that contribution.
 - [ ] Send Member 6 technical summary, test evidence, and PR URL.
 
-**Current status:** [PR #8](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/8) is merged. The action component provides `extendByMonths`, `deactivate`, and an optional `activate` helper (not part of the original assignment). The seven action unit tests passed in CI. Workshop scenarios **4 and 5 remain pending** until the required filters and processor are integrated; their results must not be marked complete prematurely.
+**Current status:** [PR #8](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/8) and the scenario tests contributed through [PR #11](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/11) are merged. The action component provides `extendByMonths`, `deactivate`, and optional `activate` (not part of the original assignment). **Scenarios 4 and 5 are verified in `main` CI**; remaining obligation is to supply final report evidence.
