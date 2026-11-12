@@ -2,7 +2,7 @@
 
 **Assigned member:** Veselina — [@vlinakonsa](https://github.com/vlinakonsa)  
 **Suggested branch:** `feature/subscriber-dao`  
-**Edit only:** `src/main/java/com/workshop/dao/SubscriberDAO.java`, `src/test/java/com/workshop/SubscriberDaoTest.java`.
+**Edit only:** `src/main/java/com/workshop/dao/SubscriberDAO.java`, `src/test/java/com/workshop/dao/SubscriberDaoTest.java`.
 
 ## Your goal
 

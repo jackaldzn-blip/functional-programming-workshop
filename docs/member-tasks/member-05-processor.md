@@ -2,7 +2,7 @@
 
 **Assigned member:** Carl — [@Matojotam](https://github.com/Matojotam)  
 **Branch:** `feature/subscriber-processor`  
-**Owned:** `src/main/java/com/workshop/service/SubscriberProcessor.java`, `src/test/java/com/workshop/SubscriberProcessorTest.java`.
+**Owned:** `src/main/java/com/workshop/service/SubscriberProcessor.java`, `src/test/java/com/workshop/service/SubscriberProcessorTest.java`.
 
 ## Goal
 

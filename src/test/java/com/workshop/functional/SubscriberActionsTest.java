@@ -1,4 +1,4 @@
-package com.workshop;
+package com.workshop.functional;
 
 public class SubscriberActionsTest {
 }
