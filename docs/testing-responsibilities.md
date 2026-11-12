@@ -30,13 +30,9 @@ Use [example-scenarios.md](example-scenarios.md). Each test creates fresh `Subsc
 
 **Integration dependency:** Scenarios 3–6 require the processor and the filters/actions they exercise. Members 4 and 6 may draft tests but cannot verify them until these are merged; Member 3's scenarios may use the processor after it is merged for consistent integration-level validation.
 
-## Additional console validation (Padma, Member 6)
-
-The interactive console is a **separate team-approved enhancement**, not a seventh required JUnit scenario. Padma should manually verify menu options `0–8`, a valid and invalid plan, nonnumeric and unknown selections, and that changes from extend/deactivate remain visible during the session. She records the actual command (`mvn exec:java`) and observed results or a short terminal transcript for the final report. The automated JUnit scenarios remain owned by the members listed above and must use fresh input data; tests should not require console input.
-
 ## How to record evidence
 
-Each member sends Padma (Member 6) their JUnit test class and method names, actual `mvn test` or `mvn clean verify` result, executed test count and PR link. If not run yet, explicitly say **Not yet run**. The team lead checks the aggregate test count and results before claiming Part 2 is complete.
+Each member sends Padma (Member 6) their JUnit test class and method names, actual `mvn test` or `mvn clean verify` result, executed test count and PR link. Padma also records manual checks for the `Main` console as specified in her [task brief](member-tasks/member-06-main-report.md). If not run yet, explicitly say **Not yet run**. The team lead checks the aggregate test count and results before claiming Part 2 is complete.
 
 ```text
 Member:

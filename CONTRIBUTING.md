@@ -21,8 +21,12 @@ git push -u origin feature/your-task-name
 ```
 
 5. Open a **Pull Request targeting `main`** and link your Issue. Include: what changed, requirements met, commands run, expected outcomes, limitations, and proof if available.
-6. Lead reviews your PR; fix requested changes on your branch. **Do not push directly to `main`** once initial setup is complete. The lead merges approved contributions.
+6. The Team Lead reviews your PR; address feedback on your branch. **Only the Team Lead merges approved PRs into `main` after reviewing CI results.** Members should not self-merge or push directly to `main`, even if GitHub permissions allow it.
 7. Share your PR link, 3–5 sentence contribution summary **and your actual test evidence** with Padma (Member 6) for the final report. Every member supplies content; Member 6 coordinates it.
+
+## Test package layout
+
+Place unit tests in the **same Java package** as the class they test, under `src/test/java`. For example, the model test lives in `com.workshop.model`, DAO tests in `com.workshop.dao`, filter/action tests in `com.workshop.functional`, and processor tests in `com.workshop.service`. Application-level scenario tests can remain in `com.workshop`. Keep `package` declarations consistent with directory paths; Maven/JUnit discovers tests across these packages.
 
 ## Collaboration rules
 

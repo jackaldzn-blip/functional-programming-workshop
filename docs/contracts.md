@@ -12,6 +12,7 @@
 - Getters: `getId(): int`, `getEmail(): String`, `getPlan(): Plan`, `isActive(): boolean`, `getMonthsRemaining(): int`.
 - Setters: `setEmail(String): void`, `setPlan(Plan): void`, `setActive(boolean): void`, `setMonthsRemaining(int): void`; subscriber ID does not change after construction.
 - Team validation: `id > 0`, nonblank email, non-null plan, `monthsRemaining >= 0`. Prefer `IllegalArgumentException` for invalid values. Keep it simple; no email regex needed.
+- `@Override public String toString()` returns the current field values in a readable single-line format for output and debugging. This convenience method does not change equality semantics.
 
 **Member 2: `com.workshop.dao`**
 
@@ -46,10 +47,8 @@
 
 **Member 6: `com.workshop.Main` and scenario 6 test**
 
-- Member 6 (Padma) implements `Main.main(String[] args)` as a **team-approved interactive console menu** (not an original instructor requirement). It exposes options 1–8 for all subscribers, active, expiring, active-and-expiring, by-plan, paying, extending active paying expiring subscriptions (+3 months in the team's example), and deactivating expired FREE subscribers; option `0` exits. See [the detailed console contract](member-tasks/member-06-main-report.md).
-- `Main` uses existing DAO, processor, filter and action methods; it must not reimplement their business logic. A simple `Scanner`/`switch` loop is sufficient. Handle nonnumeric or unknown options, invalid plan input and no matches without crashing.
-- For the interactive menu, maintain modifications within the current session rather than resetting data after each selection. Each JUnit scenario uses fresh subscriber objects for test isolation. No disk persistence or UI framework is required.
-- Member 6 implements `PlanScenarioTest.java` to assert scenario 6 (FREE, BASIC, PRO) through `findSubscribers`. Existing team scenario ownership is unchanged.
+- Member 6 implements `Main.main(String[] args)` to demonstrate the system through a simple console interface, delegating business rules to the DAO, filters, actions and processor. Details and manual checks are in the [individual brief](member-tasks/member-06-main-report.md).
+- Member 6 implements `PlanScenarioTest.java` to verify scenario 6 for FREE, BASIC and PRO plans. Automated scenarios use fresh subscriber data, independently of console state.
 
 **JUnit responsibilities (all members code and test)**
 

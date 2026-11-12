@@ -1,10 +1,10 @@
-
-package com.workshop;
+package com.workshop.functional;
 
 import com.workshop.functional.SubscriberFilters;
 import com.workshop.model.Plan;
 import com.workshop.model.Subscriber;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 class SubscriberFiltersTest {
     @Test

@@ -2,7 +2,7 @@
 
 **Assigned member:** Anas — [@jackaldzn-blip](https://github.com/jackaldzn-blip)  
 **Suggested branch:** `feature/subscriber-model`  
-**Edit only:** `src/main/java/com/workshop/model/Subscriber.java`, `Plan.java`, `src/test/java/com/workshop/SubscriberModelTest.java` (plus team coordination docs).
+**Edit only:** `src/main/java/com/workshop/model/Subscriber.java`, `Plan.java`, `src/test/java/com/workshop/model/SubscriberModelTest.java` (plus team coordination docs).
 
 ## Your goal
 
@@ -16,7 +16,8 @@ Create the fundamental data types that everyone else relies on. A `Subscriber` r
 4. Implement five getters: `getId`, `getEmail`, `getPlan`, `isActive`, `getMonthsRemaining`.
 5. Implement four setters: `setEmail`, `setPlan`, `setActive`, `setMonthsRemaining`. **Do not** provide `setId`; ID must remain stable.
 6. Enforce team-agreed validation: positive ID, nonblank email, non-null Plan, nonnegative months. Keep these checks consistent in constructor and setters.
-7. Implement focused JUnit 5 tests in `SubscriberModelTest.java`: constructor/getters, setters, invalid input, and stable ID. Also manually verify a newly created subscriber has the correct values and that an action can later update months and active status through your setters.
+7. Implement `@Override public String toString()` to display the current subscriber ID, email, plan, active status, and remaining months for Padma's console interface. This is a team convenience beyond the original workshop UML.
+8. Implement focused JUnit 5 tests in `SubscriberModelTest.java`: constructor/getters, setters, invalid input, stable ID, and `toString()` output before/after state changes. Also manually verify a newly created subscriber has the correct values and that an action can later update months and active status through your setters.
 
 ## Examples to reason through
 
@@ -38,7 +39,7 @@ Follow [testing responsibilities](../testing-responsibilities.md). Implement and
 
 ## Definition of done
 
-- [ ] Three plan enum values; five private fields; correct constructor, getters and setters.
+- [ ] Three plan enum values; five private fields; correct constructor, getters and setters; readable `toString()` override.
 - [ ] Validation for invalid input; no subscription/business-rule logic in the model.
 - [ ] `mvn clean compile` succeeds once merged; Your own `SubscriberModelTest` passes.
 - [ ] Other members can compile against the model without modifying your class.
