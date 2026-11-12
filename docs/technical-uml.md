@@ -1,6 +1,6 @@
 # Technical UML — Markdown Mermaid diagram
 
-The diagram below is in this `.md` file so GitHub renders it directly. **Classes/interfaces in the starter are intentionally empty**; each assigned member implements the agreed methods. Original workshop constructs are `Subscriber`, `Plan`, `SubscriberDAO`, `SubscriberFilter`, `SubscriberAction` and `SubscriberProcessor`. The `SubscriberFilters`, `SubscriberActions`, `Main` classes and their additional members are the **team's design**, not additions required by the instructor's conceptual UML. The team has also approved an **interactive console menu** inside `Main`; this is presentation/input behavior, not a new UML domain class.
+The diagram below is in this `.md` file so GitHub renders it directly. **The original starter contained empty classes/interfaces**; each assigned member implements the agreed methods. Original workshop constructs are `Subscriber`, `Plan`, `SubscriberDAO`, `SubscriberFilter`, `SubscriberAction` and `SubscriberProcessor`. The `SubscriberFilters`, `SubscriberActions`, `Main` classes and their additional members are the **team's design**, not additions required by the instructor's conceptual UML. The team has also approved an **interactive console menu** inside `Main`; this is presentation/input behavior, not a new UML domain class.
 
 ```mermaid
 classDiagram
@@ -29,6 +29,7 @@ classDiagram
         +setPlan(Plan plan) void
         +setActive(boolean active) void
         +setMonthsRemaining(int monthsRemaining) void
+        +toString() String
     }
 
     class SubscriberDAO {
@@ -97,4 +98,4 @@ classDiagram
 | 5 | `SubscriberProcessor`; processor unit tests and scenario 3 |
 | 6 — Padma | `Main` (interactive console menu, shown), `PlanScenarioTest` (test class not shown), shared final report coordination |
 
-**Important:** In the original UML, `applyToMatching` returns a list but its contents are unspecified. We have chosen to return the **matched, processed subscribers**. See [contracts.md](contracts.md). Keep this diagram synchronized with the final Java API.
+**Important:** In the original UML, `applyToMatching` returns a list but its contents are unspecified. We have chosen to return the **matched, processed subscribers**. See [contracts.md](contracts.md). The `Subscriber.toString()` override is a team convenience for console readability, not part of the instructor's original UML. Keep this diagram synchronized with the final Java API.

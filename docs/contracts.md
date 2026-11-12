@@ -12,6 +12,7 @@
 - Getters: `getId(): int`, `getEmail(): String`, `getPlan(): Plan`, `isActive(): boolean`, `getMonthsRemaining(): int`.
 - Setters: `setEmail(String): void`, `setPlan(Plan): void`, `setActive(boolean): void`, `setMonthsRemaining(int): void`; subscriber ID does not change after construction.
 - Team validation: `id > 0`, nonblank email, non-null plan, `monthsRemaining >= 0`. Prefer `IllegalArgumentException` for invalid values. Keep it simple; no email regex needed.
+- `@Override public String toString()` shows the current ID, email, plan, active status and remaining months in a readable single-line form, e.g. `Subscriber{id=2, email='blair@example.test', plan=BASIC, active=true, monthsRemaining=1}`. This is a team-approved convenience for Padma's console display, **not an instructor requirement**; it does not imply overriding `equals()` or `hashCode()`.
 
 **Member 2: `com.workshop.dao`**
 
