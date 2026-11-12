@@ -5,11 +5,11 @@ Six members contribute to the **Functional Programming Workshop** (Java 25). The
 | Member | Name | GitHub | Implementation | Tests | Other responsibility | Status |
 |---|---|---|---|---|---|---|
 | **1 — Lead** | Anas | [@jackaldzn-blip](https://github.com/jackaldzn-blip) | `Subscriber.java`, `Plan.java` | `SubscriberModelTest.java` | Coordination, reviews and integration | Model merged |
-| **2** | Veselina | [@vlinakonsa](https://github.com/vlinakonsa) | `SubscriberDAO.java` | `SubscriberDaoTest.java` | Data-access checks | Assigned |
+| **2** | Veselina | [@vlinakonsa](https://github.com/vlinakonsa) | `SubscriberDAO.java` | `SubscriberDaoTest.java` | Data-access checks | DAO and tests merged |
 | **3** | Jay | [@JayB111](https://github.com/JayB111) | `SubscriberFilter.java`, `SubscriberFilters.java` | `SubscriberFiltersTest.java`; scenarios 1–2 | Selection rules | Assigned |
-| **4** | Tuku | [@tukue](https://github.com/tukue) | `SubscriberAction.java`, `SubscriberActions.java` | `SubscriberActionsTest.java`; scenarios 4–5 | Subscription updates | Assigned |
+| **4** | Tuku | [@tukue](https://github.com/tukue) | `SubscriberAction.java`, `SubscriberActions.java` | `SubscriberActionsTest.java`; scenarios 4–5 | Subscription updates | Actions and unit tests merged; scenarios 4–5 pending |
 | **5** | Carl | [@Matojotam](https://github.com/Matojotam) | `SubscriberProcessor.java` | `SubscriberProcessorTest.java`; scenario 3 | Processing and integration | Assigned |
-| **6** | Padma | [@Padmaqaauto](https://github.com/Padmaqaauto) | `Main.java` | `PlanScenarioTest.java`; scenario 6 | Console demonstration and shared report coordination | In progress |
+| **6** | Padma | [@Padmaqaauto](https://github.com/Padmaqaauto) | `Main.java` | `PlanScenarioTest.java`; scenario 6 | Console demonstration and shared report coordination | Initial Main merged; console and scenario 6 pending |
 
 Status refers to the **assigned work**, not overall project completion. Contributions and reviews are tracked through GitHub branches and pull requests.
 
