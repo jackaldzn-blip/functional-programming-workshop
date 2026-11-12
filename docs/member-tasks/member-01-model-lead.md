@@ -1,6 +1,6 @@
-# Member 1 — Subscriber model, Plan enum and team lead
+# Member 1 — Anas — Subscriber model, Plan enum and team lead
 
-**Assigned GitHub username:** `@jackaldzn-blip`  
+**Assigned member:** Anas — [@jackaldzn-blip](https://github.com/jackaldzn-blip)  
 **Suggested branch:** `feature/subscriber-model`  
 **Edit only:** `src/main/java/com/workshop/model/Subscriber.java`, `Plan.java`, `src/test/java/com/workshop/SubscriberModelTest.java` (plus team coordination docs).
 
@@ -27,7 +27,7 @@ Create the fundamental data types that everyone else relies on. A `Subscriber` r
 
 ## As team lead
 
-- Collect all member names and usernames, update [`TEAM.md`](../../TEAM.md), and create one GitHub Issue per member.
+- The names and usernames are confirmed in [`TEAM.md`](../../TEAM.md). Create and coordinate one GitHub Issue per member.
 - Agree on [contracts](../contracts.md) **before** others import model API; review any suggested signature change.
 - Ensure the model PR is merged first, then review each member's PR and ensure CI/tests are meaningful.
 - Ask each member for their short implementation summary and pass them to Member 6.

@@ -1,6 +1,6 @@
-# Member 2 — SubscriberDAO / data access
+# Member 2 — Veselina — SubscriberDAO / data access
 
-**Member name / GitHub username:** _To be assigned in TEAM.md_  
+**Assigned member:** Veselina — [@vlinakonsa](https://github.com/vlinakonsa)  
 **Suggested branch:** `feature/subscriber-dao`  
 **Edit only:** `src/main/java/com/workshop/dao/SubscriberDAO.java`, `src/test/java/com/workshop/SubscriberDaoTest.java`.
 
@@ -35,7 +35,7 @@ Implement a simple in-memory place to store and retrieve `Subscriber` objects. T
 ## Dependencies and boundaries
 
 - Requires Member 1's `Subscriber` API.
-- You own your DAO-focused JUnit tests; Member 6 only owns the workshop-level integration scenarios.
+- You own your DAO-focused JUnit tests; Scenario tests are shared among Members 3–6; Padma (Member 6) coordinates the final report.
 - No SQL, no external dependencies, no method signature changes.
 
 ## Shared testing and report evidence

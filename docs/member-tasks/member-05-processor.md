@@ -1,6 +1,6 @@
-# Member 5 — SubscriberProcessor + workshop scenario 3
+# Member 5 — Carl — SubscriberProcessor + workshop scenario 3
 
-**Name/username:** _fill from TEAM.md_  
+**Assigned member:** Carl — [@Matojotam](https://github.com/Matojotam)  
 **Branch:** `feature/subscriber-processor`  
 **Owned:** `src/main/java/com/workshop/service/SubscriberProcessor.java`, `src/test/java/com/workshop/SubscriberProcessorTest.java`.
 

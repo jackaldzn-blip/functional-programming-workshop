@@ -1,6 +1,6 @@
 # Final report template — Functional Programming Workshop
 
-**Every member supplies their own implementation summary, PR link and test evidence. Member 6 assembles this shared report and the Team Lead approves it.** Do not submit placeholders as results.
+**Every member supplies their own implementation summary, PR link and test evidence. Padma (Member 6) assembles this shared report and Anas (Team Lead) approves it.** Do not submit placeholders as results.
 
 ## 1. Cover
 
@@ -8,7 +8,7 @@
 - Repository: https://github.com/jackaldzn-blip/functional-programming-workshop
 - Course / group: _fill in_
 - Submission date: _fill in_
-- Names / GitHub usernames: _copy from TEAM.md_
+- Team: Anas (@jackaldzn-blip), Veselina (@vlinakonsa), Jay (@JayB111), Tuku (@tukue), Carl (@Matojotam), Padma (@Padmaqaauto). See [TEAM.md](../TEAM.md) for ownership.
 
 ## 2. Workshop objective
 
@@ -47,12 +47,12 @@ Member ownership: scenarios **1–2 by Member 3**, **3 by Member 5**, **4–5 by
 
 | Member | Name | What they implemented | PR link |
 |---|---|---|---|
-| 1 | _ | Model + lead duties | _ |
-| 2 | _ | DAO | _ |
-| 3 | _ | Filters | _ |
-| 4 | _ | Actions | _ |
-| 5 | _ | Processor + its tests + scenario 3 | _ |
-| 6 | _ | Main demo + scenario 6 + report coordination | _ |
+| 1 | Anas (@jackaldzn-blip) | Model + lead duties | _ |
+| 2 | Veselina (@vlinakonsa) | DAO | _ |
+| 3 | Jay (@JayB111) | Filters | _ |
+| 4 | Tuku (@tukue) | Actions | _ |
+| 5 | Carl (@Matojotam) | Processor + its tests + scenario 3 | _ |
+| 6 | Padma (@Padmaqaauto) | Main demo + scenario 6 + report coordination | _ |
 
 ## 8. Lessons, limitations and conclusion
 

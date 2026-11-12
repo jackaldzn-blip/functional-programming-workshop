@@ -2,7 +2,7 @@
 
 **Repository:** https://github.com/jackaldzn-blip/functional-programming-workshop
 
-1. Confirm your full name and GitHub username to Member 1. The lead records them in [`TEAM.md`](TEAM.md) and assigns your Issue.
+1. Check your confirmed name, GitHub username and assigned task in [`TEAM.md`](TEAM.md). Anas (Team Lead) will coordinate GitHub Issues. Report any spelling mistakes before starting.
 2. Read your specific [member task brief](docs/team-tasks.md), the [Markdown technical UML](docs/technical-uml.md) and [contracts](docs/contracts.md).
 3. Clone repository, and create **your own branch from `main`**:
 
@@ -22,7 +22,7 @@ git push -u origin feature/your-task-name
 
 5. Open a **Pull Request targeting `main`** and link your Issue. Include: what changed, requirements met, commands run, expected outcomes, limitations, and proof if available.
 6. Lead reviews your PR; fix requested changes on your branch. **Do not push directly to `main`** once initial setup is complete. The lead merges approved contributions.
-7. Share your PR link, 3–5 sentence contribution summary **and your actual test evidence** with Member 6 for the final report. Every member supplies content; Member 6 coordinates it.
+7. Share your PR link, 3–5 sentence contribution summary **and your actual test evidence** with Padma (Member 6) for the final report. Every member supplies content; Member 6 coordinates it.
 
 ## Collaboration rules
 

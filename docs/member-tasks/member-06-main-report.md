@@ -1,6 +1,6 @@
-# Member 6 — Main demonstration + workshop scenario 6 + report coordination
+# Member 6 — Padma — Main demonstration + workshop scenario 6 + report coordination
 
-**Name/username:** _fill from TEAM.md_  
+**Assigned member:** Padma — [@Padmaqaauto](https://github.com/Padmaqaauto)  
 **Branch:** `feature/main-demo-and-report`  
 **Owned:** `src/main/java/com/workshop/Main.java`, `src/test/java/com/workshop/PlanScenarioTest.java`, `docs/final-report.md` (created from template).
 

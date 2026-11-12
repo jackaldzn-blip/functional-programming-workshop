@@ -1,6 +1,6 @@
-# Member 4 — Subscription actions + workshop scenarios 4 and 5
+# Member 4 — Tuku — Subscription actions + workshop scenarios 4 and 5
 
-**Name/username:** _fill from TEAM.md_  
+**Assigned member:** Tuku — [@tukue](https://github.com/tukue)  
 **Branch:** `feature/subscriber-actions`  
 **Owned:** `src/main/java/com/workshop/functional/SubscriberAction.java`, `SubscriberActions.java`, `src/test/java/com/workshop/SubscriberActionsTest.java`.
 

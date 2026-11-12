@@ -6,12 +6,12 @@ This is a **requirements-to-owner plan**, not proof that the workshop code is im
 
 | Required type | Required member(s) | Coding owner |
 |---|---|---|
-| `Subscriber` | `id:int`, `email:String`, `plan:Plan`, `active:boolean`, `monthsRemaining:int` | **1** |
-| `Plan` | Enum values FREE, BASIC, PRO | **1** |
-| `SubscriberDAO` | `save(Subscriber):void`, `findAll():List<Subscriber>`, `findById(int):Optional<Subscriber>` | **2** |
-| `SubscriberFilter` | Functional interface: `matches(Subscriber):boolean` | **3** |
-| `SubscriberAction` | Functional interface: `run(Subscriber):void` | **4** |
-| `SubscriberProcessor` | `findSubscribers(List,Filter):List`, `applyToMatching(List,Filter,Action):List` | **5** |
+| `Subscriber` | `id:int`, `email:String`, `plan:Plan`, `active:boolean`, `monthsRemaining:int` | **Anas (1)** |
+| `Plan` | Enum values FREE, BASIC, PRO | **Anas (1)** |
+| `SubscriberDAO` | `save(Subscriber):void`, `findAll():List<Subscriber>`, `findById(int):Optional<Subscriber>` | **Veselina (2)** |
+| `SubscriberFilter` | Functional interface: `matches(Subscriber):boolean` | **Jay (3)** |
+| `SubscriberAction` | Functional interface: `run(Subscriber):void` | **Tuku (4)** |
+| `SubscriberProcessor` | `findSubscribers(List,Filter):List`, `applyToMatching(List,Filter,Action):List` | **Carl (5)** |
 
 ## Part 1 — All seven required rules
 
@@ -31,12 +31,12 @@ Member 5 combines filters and actions using the two required processor operation
 
 | Original scenario | JUnit owner | Test file |
 |---|---|---|
-| 1. Show active | **3** | `SubscriberFiltersTest.java` |
-| 2. Show expiring | **3** | `SubscriberFiltersTest.java` |
-| 3. Show active and expiring | **5** | `SubscriberProcessorTest.java` |
-| 4. Extend active, paying, expiring | **4** | `SubscriberActionsTest.java` |
-| 5. Deactivate expired FREE | **4** | `SubscriberActionsTest.java` |
-| 6. Filter by plan | **6** | `PlanScenarioTest.java` |
+| 1. Show active | **Jay (3)** | `SubscriberFiltersTest.java` |
+| 2. Show expiring | **Jay (3)** | `SubscriberFiltersTest.java` |
+| 3. Show active and expiring | **Carl (5)** | `SubscriberProcessorTest.java` |
+| 4. Extend active, paying, expiring | **Tuku (4)** | `SubscriberActionsTest.java` |
+| 5. Deactivate expired FREE | **Tuku (4)** | `SubscriberActionsTest.java` |
+| 6. Filter by plan | **Padma (6)** | `PlanScenarioTest.java` |
 
 All six also write **component-level tests** for the Java code they own. Member 6 additionally runs the console demonstration and coordinates the **shared** final report. See [testing responsibilities](testing-responsibilities.md) and [team task table](team-tasks.md).
 

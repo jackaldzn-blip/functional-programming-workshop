@@ -19,16 +19,16 @@ A six-person Java 25 + Maven workshop for implementing the subscription list man
 
 ## Work assignment
 
-| Member | Code to implement | JUnit test ownership | Extra responsibility |
+| Member (GitHub) | Code to implement | JUnit test ownership | Extra responsibility |
 |---|---|---|---|
-| **1** | `Subscriber`, `Plan` | Model tests | Integrate and review PRs |
-| **2** | `SubscriberDAO` | DAO tests | Data-access checks |
-| **3** | `SubscriberFilter`, `SubscriberFilters` | Unit tests + **scenarios 1,2** | Five filter rules |
-| **4** | `SubscriberAction`, `SubscriberActions` | Unit tests + **scenarios 4,5** | Two actions |
-| **5** | `SubscriberProcessor` | Unit tests + **scenario 3** | Processing integration |
-| **6** | `Main` | **Scenario 6** | Demo + assemble report |
+| **1 — [Anas](https://github.com/jackaldzn-blip) (@jackaldzn-blip)** | `Subscriber`, `Plan` | Model tests | Team Lead, reviews and integration |
+| **2 — [Veselina](https://github.com/vlinakonsa) (@vlinakonsa)** | `SubscriberDAO` | DAO tests | Data-access checks |
+| **3 — [Jay](https://github.com/JayB111) (@JayB111)** | `SubscriberFilter`, `SubscriberFilters` | Unit tests + **scenarios 1,2** | Five filter rules |
+| **4 — [Tuku](https://github.com/tukue) (@tukue)** | `SubscriberAction`, `SubscriberActions` | Unit tests + **scenarios 4,5** | Two actions |
+| **5 — [Carl](https://github.com/Matojotam) (@Matojotam)** | `SubscriberProcessor` | Unit tests + **scenario 3** | Processing integration |
+| **6 — [Padma](https://github.com/Padmaqaauto) (@Padmaqaauto)** | `Main` | **Scenario 6** | Demonstration + final report coordination |
 
-**Report contributions are shared:** every member sends their own implementation explanation, PR URL, test evidence and limitations to Member 6. Member 6 compiles the final report; the lead approves it.
+**Report contributions are shared:** every member sends their own implementation explanation, PR URL, test evidence and limitations to Member 6. Padma (Member 6) compiles the final report; Anas (Member 1, Team Lead) approves it.
 
 ## Original requirements and design choices
 

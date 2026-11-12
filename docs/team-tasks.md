@@ -4,14 +4,14 @@ This is the **rebalanced six-member assignment**. Every member contributes Java 
 
 Before starting, read the [original workshop](../assignment/Functional_Programming_Workshop.md), [technical UML](technical-uml.md), [API contracts](contracts.md), [example data](example-scenarios.md) and [testing guide](testing-responsibilities.md). All starter Java classes are intentionally empty.
 
-| Member | Java coding task | Tests and scenarios | Detailed brief |
+| Member / owner | Java coding task | Tests and scenarios | Detailed brief |
 |---|---|---|---|
-| **1** | `Subscriber.java`, `Plan.java` | `SubscriberModelTest.java`; getters, setters, constructor, validation | [Member 1](member-tasks/member-01-model-lead.md) |
-| **2** | `SubscriberDAO.java` | `SubscriberDaoTest.java`; save, findAll, findById | [Member 2](member-tasks/member-02-dao.md) |
-| **3** | `SubscriberFilter.java`, `SubscriberFilters.java` | `SubscriberFiltersTest.java`; unit tests + **scenario 1 (active)** and **scenario 2 (expiring)** | [Member 3](member-tasks/member-03-filters.md) |
-| **4** | `SubscriberAction.java`, `SubscriberActions.java` | `SubscriberActionsTest.java`; unit tests + **scenario 4 (extend)** and **scenario 5 (deactivate)** | [Member 4](member-tasks/member-04-actions.md) |
-| **5** | `SubscriberProcessor.java` | `SubscriberProcessorTest.java`; unit tests + **scenario 3 (active AND expiring)** | [Member 5](member-tasks/member-05-processor.md) |
-| **6** | `Main.java` | `PlanScenarioTest.java`; **scenario 6 (by plan)** | [Member 6](member-tasks/member-06-main-report.md); also assembles report |
+| **1 — [Anas](https://github.com/jackaldzn-blip) (@jackaldzn-blip)** | `Subscriber.java`, `Plan.java` | `SubscriberModelTest.java`; getters, setters, constructor, validation | [Anas's task](member-tasks/member-01-model-lead.md) |
+| **2 — [Veselina](https://github.com/vlinakonsa) (@vlinakonsa)** | `SubscriberDAO.java` | `SubscriberDaoTest.java`; save, findAll, findById | [Veselina's task](member-tasks/member-02-dao.md) |
+| **3 — [Jay](https://github.com/JayB111) (@JayB111)** | `SubscriberFilter.java`, `SubscriberFilters.java` | `SubscriberFiltersTest.java`; unit tests + **scenario 1 (active)** and **scenario 2 (expiring)** | [Jay's task](member-tasks/member-03-filters.md) |
+| **4 — [Tuku](https://github.com/tukue) (@tukue)** | `SubscriberAction.java`, `SubscriberActions.java` | `SubscriberActionsTest.java`; unit tests + **scenario 4 (extend)** and **scenario 5 (deactivate)** | [Tuku's task](member-tasks/member-04-actions.md) |
+| **5 — [Carl](https://github.com/Matojotam) (@Matojotam)** | `SubscriberProcessor.java` | `SubscriberProcessorTest.java`; unit tests + **scenario 3 (active AND expiring)** | [Carl's task](member-tasks/member-05-processor.md) |
+| **6 — [Padma](https://github.com/Padmaqaauto) (@Padmaqaauto)** | `Main.java` | `PlanScenarioTest.java`; **scenario 6 (by plan)** | [Padma's task](member-tasks/member-06-main-report.md); also assembles the shared report |
 
 ## Integration and test sequence
 
@@ -26,13 +26,13 @@ Work may be prepared on separate branches in parallel; **do not claim integratio
 
 ## Submission checklist for EVERY member
 
-- [ ] Send lead full name, GitHub username and assigned number.
+- [ ] Verify your assigned name and GitHub username in [TEAM.md](../TEAM.md).
 - [ ] Read your own task brief, [contracts](contracts.md), UML and [test expectations](testing-responsibilities.md).
 - [ ] Implement only your owned Java files; agree on cross-file changes before editing.
 - [ ] Write meaningful JUnit tests and assertions for your assigned scope.
 - [ ] Run relevant checks (`mvn test`, `mvn clean verify` once integrated); record exact results, not assumptions.
 - [ ] Open a Pull Request linking your GitHub Issue.
-- [ ] Send Member 6 a **3–5 sentence implementation summary**, PR link, and test evidence/limitations for the final report.
+- [ ] Send Padma (Member 6) a **3–5 sentence implementation summary**, PR link, and test evidence/limitations for the final report.
 
 ## Instructor requirements vs team design
 
