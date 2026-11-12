@@ -7,7 +7,7 @@ Six members contribute to the **Functional Programming Workshop** (Java 25). The
 | **1 — Lead** | Anas | [@jackaldzn-blip](https://github.com/jackaldzn-blip) | `Subscriber.java`, `Plan.java` | `SubscriberModelTest.java` | Coordination, reviews and integration | Model merged |
 | **2** | Veselina | [@vlinakonsa](https://github.com/vlinakonsa) | `SubscriberDAO.java` | `SubscriberDaoTest.java` | Data-access checks | Assigned |
 | **3** | Jay | [@JayB111](https://github.com/JayB111) | `SubscriberFilter.java`, `SubscriberFilters.java` | `SubscriberFiltersTest.java`; scenarios 1–2 | Selection rules | Assigned |
-| **4** | Tuku | [@tukue](https://github.com/tukue) | `SubscriberAction.java`, `SubscriberActions.java` | `SubscriberActionsTest.java`; scenarios 4–5 | Subscription updates | Assigned |
+| **4** | Tuku | [@tukue](https://github.com/tukue) | `SubscriberAction.java`, `SubscriberActions.java` | `SubscriberActionsTest.java`; scenarios 4–5 | Subscription updates | Core actions implemented; CI/scenarios pending |
 | **5** | Carl | [@Matojotam](https://github.com/Matojotam) | `SubscriberProcessor.java` | `SubscriberProcessorTest.java`; scenario 3 | Processing and integration | Assigned |
 | **6** | Padma | [@Padmaqaauto](https://github.com/Padmaqaauto) | `Main.java` | `PlanScenarioTest.java`; scenario 6 | Console demonstration and shared report coordination | In progress |
 

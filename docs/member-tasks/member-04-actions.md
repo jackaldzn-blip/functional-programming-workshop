@@ -30,8 +30,10 @@ Unit tests depend on Member 1 model. The two scenario tests additionally need Me
 
 ## Definition of done
 
-- [ ] One-method action functional interface; extension and deactivation actions.
-- [ ] Unit tests pass; action creation does not prematurely mutate state.
+- [x] One-method action functional interface; extension and deactivation actions. An additional `activate()` action is also implemented.
+- [ ] Unit tests pass; unit coverage is written, and CI execution is pending.
 - [ ] **Scenario 4 and 5** JUnit assertions pass with all nonmatching subscribers untouched.
-- [ ] PR records commands, expected/observed results, and scenario details.
+- [ ] PR records commands, expected/observed results, and scenario details. The feature branch is pushed; PR creation/review is still pending.
 - [ ] Send Member 6 technical summary, test evidence, and PR URL.
+
+Scenario tests 4 and 5 are waiting on Member 3's filters and Member 5's processor. The local environment did not have Java installed, so test results must be confirmed by CI after the PR is opened.
