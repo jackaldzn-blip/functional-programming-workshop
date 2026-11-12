@@ -2,7 +2,7 @@
 
 **Assigned member:** Tuku — [@tukue](https://github.com/tukue)  
 **Branch:** `feature/subscriber-actions`  
-**Owned:** `src/main/java/com/workshop/functional/SubscriberAction.java`, `SubscriberActions.java`, `src/test/java/com/workshop/SubscriberActionsTest.java`.
+**Owned:** `src/main/java/com/workshop/functional/SubscriberAction.java`, `SubscriberActions.java`, `src/test/java/com/workshop/functional/SubscriberActionsTest.java`.
 
 ## Goal
 
