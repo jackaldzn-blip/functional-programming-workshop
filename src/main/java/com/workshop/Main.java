@@ -1,10 +1,9 @@
 package com.workshop;
 
-import com.workshop.dao.SubscriberDAO;
-import com.workshop.functional.SubscriberFilters;
+
 import com.workshop.model.Plan;
 import com.workshop.model.Subscriber;
-import com.workshop.service.SubscriberProcessor;
+
 
 import java.util.ArrayList;
 import java.util.List;
