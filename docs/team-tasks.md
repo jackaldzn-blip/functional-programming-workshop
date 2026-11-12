@@ -7,7 +7,7 @@ Before starting, read the [original workshop](../assignment/Functional_Programmi
 | Member / owner | Java coding task | Tests and scenarios | Detailed brief |
 |---|---|---|---|
 | **1 — [Anas](https://github.com/jackaldzn-blip) (@jackaldzn-blip)** | `Subscriber.java`, `Plan.java` | `SubscriberModelTest.java`; getters, setters, constructor, validation | [Anas's task](member-tasks/member-01-model-lead.md) |
-| **2 — [Veselina](https://github.com/vlinakonsa) (@vlinakonsa)** | `SubscriberDAO.java` | `SubscriberDaoTest.java`; save, findAll, findById | [Veselina's task](member-tasks/member-02-dao.md) |
+| **2 — [Veselina](https://github.com/vlinakonsa-svg) (@vlinakonsa-svg)** | `SubscriberDAO.java` | `SubscriberDaoTest.java`; save, findAll, findById | [Veselina's task](member-tasks/member-02-dao.md) |
 | **3 — [Jay](https://github.com/JayB111) (@JayB111)** | `SubscriberFilter.java`, `SubscriberFilters.java` | `SubscriberFiltersTest.java`; unit tests + **scenario 1 (active)** and **scenario 2 (expiring)** | [Jay's task](member-tasks/member-03-filters.md) |
 | **4 — [Tuku](https://github.com/tukue) (@tukue)** | `SubscriberAction.java`, `SubscriberActions.java` | `SubscriberActionsTest.java`; unit tests + **scenario 4 (extend)** and **scenario 5 (deactivate)** | [Tuku's task](member-tasks/member-04-actions.md) |
 | **5 — [Carl](https://github.com/Matojotam) (@Matojotam)** | `SubscriberProcessor.java` | `SubscriberProcessorTest.java`; unit tests + **scenario 3 (active AND expiring)** | [Carl's task](member-tasks/member-05-processor.md) |

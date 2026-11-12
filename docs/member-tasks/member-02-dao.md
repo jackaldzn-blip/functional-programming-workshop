@@ -1,6 +1,6 @@
 # Member 2 — Veselina — SubscriberDAO / data access
 
-**Assigned member:** Veselina — [@vlinakonsa](https://github.com/vlinakonsa)  
+**Assigned member:** Veselina — [@vlinakonsa-svg](https://github.com/vlinakonsa-svg)  
 **Suggested branch:** `feature/subscriber-dao`  
 **Edit only:** `src/main/java/com/workshop/dao/SubscriberDAO.java`, `src/test/java/com/workshop/dao/SubscriberDaoTest.java`.
 

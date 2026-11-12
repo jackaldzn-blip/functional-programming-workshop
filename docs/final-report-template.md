@@ -10,7 +10,7 @@
 - Repository: https://github.com/jackaldzn-blip/functional-programming-workshop
 - Course / group: _fill in_
 - Submission date: _fill in_
-- Team: Anas (@jackaldzn-blip), Veselina (@vlinakonsa), Jay (@JayB111), Tuku (@tukue), Carl (@Matojotam), Padma (@Padmaqaauto). See [TEAM.md](../TEAM.md) for ownership.
+- Team: Anas (@jackaldzn-blip), Veselina (@vlinakonsa-svg), Jay (@JayB111), Tuku (@tukue), Carl (@Matojotam), Padma (@Padmaqaauto). See [TEAM.md](../TEAM.md) for ownership.
 
 ## 2. Workshop objective
 
@@ -52,7 +52,7 @@ Member ownership: scenarios **1–2 by Member 3**, **3 by Member 5**, **4–5 by
 | Member | Name | What they implemented | PR link |
 |---|---|---|---|
 | 1 | Anas (@jackaldzn-blip) | Model + lead duties | [#1](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/1), [#4](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/4), [#9](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/9) |
-| 2 | Veselina (@vlinakonsa) | DAO | [#6](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/6) |
+| 2 | Veselina (@vlinakonsa-svg) | DAO | [#6](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/6) |
 | 3 | Jay (@JayB111) | Filters; scenarios 1–2 pending | [#10](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/10) |
 | 4 | Tuku (@tukue) | Actions; scenarios 4–5 in PR #11 | [#8](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/8), [#11](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/11) |
 | 5 | Carl (@Matojotam) | Processor + its tests + scenario 3 | [#11](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/11) |
