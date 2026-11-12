@@ -46,8 +46,10 @@
 
 **Member 6: `com.workshop.Main` and scenario 6 test**
 
-- Member 6 implements `Main.main(String[] args)` to display all six original scenarios, using the other components instead of reimplementing their rules. Main can construct fresh sample data before each mutation scenario to keep results reproducible.
-- Member 6 implements `PlanScenarioTest.java` to assert scenario 6 (FREE, BASIC, PRO) through `findSubscribers`.
+- Member 6 (Padma) implements `Main.main(String[] args)` as a **team-approved interactive console menu** (not an original instructor requirement). It exposes options 1–8 for all subscribers, active, expiring, active-and-expiring, by-plan, paying, extending active paying expiring subscriptions (+3 months in the team's example), and deactivating expired FREE subscribers; option `0` exits. See [the detailed console contract](member-tasks/member-06-main-report.md).
+- `Main` uses existing DAO, processor, filter and action methods; it must not reimplement their business logic. A simple `Scanner`/`switch` loop is sufficient. Handle nonnumeric or unknown options, invalid plan input and no matches without crashing.
+- For the interactive menu, maintain modifications within the current session rather than resetting data after each selection. Each JUnit scenario uses fresh subscriber objects for test isolation. No disk persistence or UI framework is required.
+- Member 6 implements `PlanScenarioTest.java` to assert scenario 6 (FREE, BASIC, PRO) through `findSubscribers`. Existing team scenario ownership is unchanged.
 
 **JUnit responsibilities (all members code and test)**
 
