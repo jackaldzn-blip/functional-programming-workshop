@@ -1,6 +1,6 @@
 # Workshop coverage map — Java 25 revised team allocation
 
-This is a **requirements-to-owner plan**, not proof that the workshop code is implemented. All Java classes and JUnit test shells start empty. Source: [original assignment](../assignment/Functional_Programming_Workshop.md).
+This is a **requirements-to-owner plan**, not proof that the workshop code is implemented. The project started with empty Java class and JUnit shells; verify the current code and PRs for actual implementation status. Source: [original assignment](../assignment/Functional_Programming_Workshop.md).
 
 ## Original conceptual UML
 
@@ -38,11 +38,11 @@ Member 5 combines filters and actions using the two required processor operation
 | 5. Deactivate expired FREE | **Tuku (4)** | `SubscriberActionsTest.java` |
 | 6. Filter by plan | **Padma (6)** | `PlanScenarioTest.java` |
 
-All six also write **component-level tests** for the Java code they own. Member 6 additionally runs the console demonstration and coordinates the **shared** final report. See [testing responsibilities](testing-responsibilities.md) and [team task table](team-tasks.md).
+All six also write **component-level tests** for the Java code they own. Padma (Member 6) additionally builds and manually validates the **approved interactive console menu** and coordinates the **shared** final report. See [testing responsibilities](testing-responsibilities.md) and [team task table](team-tasks.md).
 
 ## Decisions made by our team, not required by instructor
 
-- `SubscriberFilters` and `SubscriberActions` helper classes; standalone `Main.java` demonstration.
+- `SubscriberFilters` and `SubscriberActions` helper classes; `Main.java` interactive console menu (team-approved extra, not required by the original workshop).
 - Constructors, getters/setters, validation, in-memory DAO and duplicate ID handling.
 - `applyToMatching` returns a new list of matched/processed subscribers; the assignment only specifies the return **type**.
 - Sample dataset and +3 month extension example; the workshop does not specify either.

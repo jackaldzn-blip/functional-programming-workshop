@@ -112,4 +112,23 @@ class SubscriberModelTest {
         assertTrue(second.isActive());
         assertEquals(4, second.getMonthsRemaining());
     }
+    @Test
+    void toStringDisplaysAllSubscriberFields() {
+        Subscriber subscriber = new Subscriber(2, "blair@example.test", Plan.BASIC, true, 1);
+
+        assertEquals("Subscriber{id=2, email='blair@example.test', plan=BASIC, active=true, monthsRemaining=1}",
+                subscriber.toString());
+    }
+
+    @Test
+    void toStringReflectsUpdatedSubscriberState() {
+        Subscriber subscriber = new Subscriber(2, "blair@example.test", Plan.BASIC, true, 1);
+        subscriber.setPlan(Plan.PRO);
+        subscriber.setActive(false);
+        subscriber.setMonthsRemaining(4);
+
+        assertEquals("Subscriber{id=2, email='blair@example.test', plan=PRO, active=false, monthsRemaining=4}",
+                subscriber.toString());
+    }
+
 }

@@ -70,11 +70,14 @@ public class Subscriber {
         this.monthsRemaining = monthsRemaining;
     }
 
+    /**
+     * Returns a readable representation of the subscriber for console output.
+     */
     @Override
     public String toString() {
         return "Subscriber{" +
                 "id=" + id +
-                ", email='" + email + '\'' +
+                ", email='" + email + "'" +
                 ", plan=" + plan +
                 ", active=" + active +
                 ", monthsRemaining=" + monthsRemaining +

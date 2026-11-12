@@ -11,7 +11,7 @@ No single member owns all testing. **Each developer unit-tests their own code**,
 | Jay (Member 3) | `SubscriberFiltersTest.java` | Five filter factories, zero/one/two-month boundary, inactive cases | **1 — Active; 2 — Expiring** |
 | Tuku (Member 4) | `SubscriberActionsTest.java` | Extend, invalid duration, deactivate, repeat action, no premature mutation | **4 — Extend eligible paid; 5 — Deactivate expired FREE** |
 | Carl (Member 5) | `SubscriberProcessorTest.java` | Selection order, no matches, only matching mutations, once-per-match action | **3 — Active AND expiring** |
-| Padma (Member 6) | `PlanScenarioTest.java` | By-plan selection through processor using each enum value | **6 — Filter by plan** |
+| Padma (Member 6) | `PlanScenarioTest.java` | By-plan selection through processor using each enum value; manual console menu acceptance checks | **6 — Filter by plan** |
 
 ## Shared seven-subscriber fixture
 
@@ -29,6 +29,10 @@ Use [example-scenarios.md](example-scenarios.md). Each test creates fresh `Subsc
 | **6 — Filter by plan** | Padma (Member 6) | FREE `1,4,7`; BASIC `2,5`; PRO `3,6`, checked independently |
 
 **Integration dependency:** Scenarios 3–6 require the processor and the filters/actions they exercise. Members 4 and 6 may draft tests but cannot verify them until these are merged; Member 3's scenarios may use the processor after it is merged for consistent integration-level validation.
+
+## Additional console validation (Padma, Member 6)
+
+The interactive console is a **separate team-approved enhancement**, not a seventh required JUnit scenario. Padma should manually verify menu options `0–8`, a valid and invalid plan, nonnumeric and unknown selections, and that changes from extend/deactivate remain visible during the session. She records the actual command (`mvn exec:java`) and observed results or a short terminal transcript for the final report. The automated JUnit scenarios remain owned by the members listed above and must use fresh input data; tests should not require console input.
 
 ## How to record evidence
 
