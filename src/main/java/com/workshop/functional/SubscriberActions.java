@@ -33,4 +33,12 @@ public class SubscriberActions {
             subscriber.setActive(false);
         };
     }
+
+    /** Creates an action that marks a subscriber active when run. */
+    public static SubscriberAction activate() {
+        return subscriber -> {
+            Objects.requireNonNull(subscriber, "subscriber");
+            subscriber.setActive(true);
+        };
+    }
 }

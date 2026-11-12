@@ -58,6 +58,16 @@ class SubscriberActionsTest {
     }
 
     @Test
+    void activateMarksSubscriberActive() {
+        Subscriber subscriber = subscriber(1, false, 5);
+
+        SubscriberActions.activate().run(subscriber);
+
+        assertTrue(subscriber.isActive());
+        assertEquals(5, subscriber.getMonthsRemaining());
+    }
+
+    @Test
     void actionCanBeAssignedToFunctionalInterface() {
         SubscriberAction action = subscriber -> subscriber.setActive(true);
         Subscriber subscriber = subscriber(1, false, 1);
