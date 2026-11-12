@@ -21,7 +21,7 @@ A six-person Java 25 + Maven workshop for implementing the subscription list man
 
 | Member | Code to implement | JUnit test ownership | Extra responsibility |
 |---|---|---|---|
-| **1 — Lead** | `Subscriber`, `Plan` | Model tests | Integrate and review PRs |
+| **1** | `Subscriber`, `Plan` | Model tests | Integrate and review PRs |
 | **2** | `SubscriberDAO` | DAO tests | Data-access checks |
 | **3** | `SubscriberFilter`, `SubscriberFilters` | Unit tests + **scenarios 1,2** | Five filter rules |
 | **4** | `SubscriberAction`, `SubscriberActions` | Unit tests + **scenarios 4,5** | Two actions |
