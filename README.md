@@ -4,9 +4,11 @@ A six-member **Java 25 / Maven** project implementing a subscription list manage
 
 The exercise demonstrates object-oriented modeling and **functional programming** through reusable selection filters, actions and a processor. Development is shared across the team; see [TEAM.md](TEAM.md) for owners and progress.
 
-## Verified progress (12 November 2026)
+## Current progress (12 November 2026)
 
-All five core components are merged. Java 25 CI passed **48 JUnit tests** on `main`. Workshop scenarios **3–5** are verified; Jay's scenarios **1–2** and Padma's scenario **6** remain. `Main` currently prints sample subscribers; Padma's optional interactive menu and the completed shared report are still pending. See the dated [project status](docs/project-status.md) for PR links, owners and the remaining integration checklist.
+- **Completed:** All five core components merged; Java 25 CI passed **48 tests** on `main`. Workshop scenarios **3–5** are verified.
+- **Remaining:** Jay — scenario tests **1–2**; Padma — scenario **6**, interactive console menu and final report. All members should send Padma their contribution summaries and actual test evidence.
+- **Next:** Submit remaining work by PR for team-lead review. See [TEAM.md](TEAM.md) for member responsibilities.
 
 ## Workshop scope
 

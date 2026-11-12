@@ -2,7 +2,7 @@
 
 **Every member supplies their own implementation summary, PR link and test evidence. Padma (Member 6) assembles this shared report and Anas (Team Lead) approves it.** Do not submit placeholders as results.
 
-**Verified draft baseline (12 November 2026):** [project status](project-status.md) records 48 passing tests on `main`. Scenarios 3–5 have named passing JUnit methods; scenarios 1–2 and 6, console checks and final member write-ups are **not yet complete**. Treat these entries as **preliminary evidence**, not proof that final submission has been accepted.
+**Verified draft baseline (12 November 2026):** [README progress](../README.md#current-progress-12-november-2026) records 48 passing tests on `main`. Scenarios 3–5 have named passing JUnit methods; scenarios 1–2 and 6, console checks and final member write-ups are **not yet complete**. Treat these entries as **preliminary evidence**, not proof that final submission has been accepted.
 
 ## 1. Cover
 
