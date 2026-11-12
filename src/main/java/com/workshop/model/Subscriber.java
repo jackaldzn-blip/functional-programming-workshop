@@ -69,4 +69,15 @@ public class Subscriber {
         }
         this.monthsRemaining = monthsRemaining;
     }
+
+    @Override
+    public String toString() {
+        return "Subscriber{" +
+                "id=" + id +
+                ", email='" + email + '\'' +
+                ", plan=" + plan +
+                ", active=" + active +
+                ", monthsRemaining=" + monthsRemaining +
+                '}';
+    }
 }
