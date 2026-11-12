@@ -1,6 +1,6 @@
-# Workshop coverage map — Java 25 revised team allocation
+# Workshop requirements coverage
 
-This is a **requirements-to-owner plan**, not proof that the workshop code is implemented. The project started with empty Java class and JUnit shells; verify the current code and PRs for actual implementation status. Source: [original assignment](../assignment/Functional_Programming_Workshop.md).
+This maps the [original assignment](../assignment/Functional_Programming_Workshop.md) to team responsibilities. It describes planned coverage; check the code and test results for implementation status.
 
 ## Original conceptual UML
 
@@ -38,11 +38,11 @@ Member 5 combines filters and actions using the two required processor operation
 | 5. Deactivate expired FREE | **Tuku (4)** | `SubscriberActionsTest.java` |
 | 6. Filter by plan | **Padma (6)** | `PlanScenarioTest.java` |
 
-All six also write **component-level tests** for the Java code they own. Padma (Member 6) additionally builds and manually validates the **approved interactive console menu** and coordinates the **shared** final report. See [testing responsibilities](testing-responsibilities.md) and [team task table](team-tasks.md).
+Each member tests their own component. Member 6 also verifies the application demonstration and coordinates the shared report. See [testing responsibilities](testing-responsibilities.md) and [team tasks](team-tasks.md).
 
 ## Decisions made by our team, not required by instructor
 
-- `SubscriberFilters` and `SubscriberActions` helper classes; `Main.java` interactive console menu (team-approved extra, not required by the original workshop).
+- Supporting filter/action helpers and a console entry point in `Main.java`.
 - Constructors, getters/setters, validation, in-memory DAO and duplicate ID handling.
 - `applyToMatching` returns a new list of matched/processed subscribers; the assignment only specifies the return **type**.
 - Sample dataset and +3 month extension example; the workshop does not specify either.
@@ -51,4 +51,4 @@ All six also write **component-level tests** for the Java code they own. Padma (
 ## Java toolchain
 
 - Java 25, Maven, JUnit 5; `pom.xml` release 25 and GitHub Actions Temurin 25.
-- An empty starter passing compilation **does not** mean any requirement is implemented or tested.
+- A successful build does not prove that all workshop scenarios have meaningful passing tests.
