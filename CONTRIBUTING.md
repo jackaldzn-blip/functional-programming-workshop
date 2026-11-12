@@ -31,7 +31,7 @@ Place unit tests in the **same Java package** as the class they test, under `src
 ## Collaboration rules
 
 - Don't edit another member's class, signatures or tests without talking first.
-- **Current progress:** core components are already integrated. See [project status](docs/project-status.md) for current pending scenarios and report tasks.
+- **Current progress:** core components are already integrated. See [README progress](README.md#current-progress-12-november-2026) for current pending scenarios and report tasks.
 - Member 1 stabilized the model first. DAO, filters and actions followed, then the processor. Member 6's interactive Main and the remaining scenarios should reuse these merged APIs. Cross-component scenario tests must be verified against the current `main`.
 - UML lives in [`docs/technical-uml.md`](docs/technical-uml.md), **not in a separate exported image**.
 - Every member writes JUnit tests for their own component. **Six integrated scenario tests are distributed**: Member 3 scenarios 1–2; Member 4 scenarios 4–5; Member 5 scenario 3; Member 6 scenario 6. Member 6 also implements `Main.java` and assembles the **shared** final report using evidence provided by all six; see [testing guide](docs/testing-responsibilities.md). Everyone addresses bugs found in their own code.

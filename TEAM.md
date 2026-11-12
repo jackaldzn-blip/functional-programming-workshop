@@ -11,7 +11,7 @@ Six members contribute to the **Functional Programming Workshop** (Java 25). The
 | **5** | Carl | [@Matojotam](https://github.com/Matojotam) | `SubscriberProcessor.java` | `SubscriberProcessorTest.java`; scenario 3 | Processing and integration | Processor + scenario 3 merged in [#11](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/11) |
 | **6** | Padma | [@Padmaqaauto](https://github.com/Padmaqaauto) | `Main.java` | `PlanScenarioTest.java`; scenario 6 | Console demonstration and shared report coordination | Initial Main merged in [#3](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/3); scenario 6, menu and report pending |
 
-**Verified snapshot (12 November 2026):** all five core components merged; **48 tests passed on `main`**, scenarios **3–5** passed; **1–2 and 6** pending. See [project status](docs/project-status.md) for evidence and next actions.
+**Progress:** See [README.md](README.md#current-progress-12-november-2026) for the latest documented project snapshot. The member statuses below reflect the 12 November 2026 review.
 
 Status refers to the **assigned work**, not overall project completion. Contributions and reviews are tracked through GitHub branches and pull requests.
 

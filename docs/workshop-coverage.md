@@ -1,6 +1,6 @@
 # Workshop requirements coverage
 
-This maps the [original assignment](../assignment/Functional_Programming_Workshop.md) to team responsibilities. It distinguishes original requirements from the team's implementation. For the verified **12 November 2026** progress baseline, see [project status](project-status.md): all six conceptual types and seven rules are implemented and merged; 48 JUnit tests pass on `main`.
+This maps the [original assignment](../assignment/Functional_Programming_Workshop.md) to team responsibilities. It distinguishes original requirements from the team's implementation. For the verified **12 November 2026** progress baseline, see [README progress](../README.md#current-progress-12-november-2026): all six conceptual types and seven rules are implemented and merged; 48 JUnit tests pass on `main`.
 
 ## Original conceptual UML
 
