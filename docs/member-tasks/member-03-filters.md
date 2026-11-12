@@ -2,7 +2,7 @@
 
 **Assigned member:** Jay — [@JayB111](https://github.com/JayB111)  
 **Branch:** `feature/subscriber-filters`  
-**Owned:** `src/main/java/com/workshop/functional/SubscriberFilter.java`, `SubscriberFilters.java`, `src/test/java/com/workshop/SubscriberFiltersTest.java`.
+**Owned:** `src/main/java/com/workshop/functional/SubscriberFilter.java`, `SubscriberFilters.java`, `src/test/java/com/workshop/functional/SubscriberFiltersTest.java`.
 
 ## Goal
 

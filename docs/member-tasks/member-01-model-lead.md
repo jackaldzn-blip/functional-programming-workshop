@@ -2,7 +2,7 @@
 
 **Assigned member:** Anas — [@jackaldzn-blip](https://github.com/jackaldzn-blip)  
 **Suggested branch:** `feature/subscriber-model`  
-**Edit only:** `src/main/java/com/workshop/model/Subscriber.java`, `Plan.java`, `src/test/java/com/workshop/SubscriberModelTest.java` (plus team coordination docs).
+**Edit only:** `src/main/java/com/workshop/model/Subscriber.java`, `Plan.java`, `src/test/java/com/workshop/model/SubscriberModelTest.java` (plus team coordination docs).
 
 ## Your goal
 
