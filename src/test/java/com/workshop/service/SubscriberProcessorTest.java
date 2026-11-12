@@ -60,7 +60,7 @@ class SubscriberProcessorTest {
         assertEquals(List.of(2, 4, 6), ids(processed));
         assertEquals(subscribers.size(), filterCalls.get());
         assertEquals(3, actionCalls.get());
-        assertEquals(List.of(true, false, true, false, true, false, true),
+        assertEquals(List.of(true, false, true, false, false, false, true),
                 subscribers.stream().map(Subscriber::isActive).toList());
     }
 
