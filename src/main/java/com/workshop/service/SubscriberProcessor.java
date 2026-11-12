@@ -2,10 +2,12 @@ package com.workshop.service;
 
 import com.workshop.functional.SubscriberFilter;
 import com.workshop.functional.SubscriberAction;
+import com.workshop.model.Subscriber;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class SubscriberProcessor {
+
     /**
      * Filters subscribers based on the provided filter criteria.
      * Returns a new list of matching subscribers in their original order.
