@@ -23,9 +23,8 @@ public class SubscriberProcessor {
      * Returns a new list containing only the processed subscribers in input order.
      */
     public List<Subscriber> applyToMatching(List<Subscriber> list, SubscriberFilter filter, SubscriberAction action) {
-        return list.stream()
-                .filter(filter::matches)
-                .map(action::run)
-                .collect(Collectors.toList());
+        List<Subscriber> matchingSubscribers = findSubscribers(list, filter);
+        matchingSubscribers.forEach(action::run);
+        return matchingSubscribers;
     }
 }

@@ -1,81 +1,91 @@
 package com.workshop.service;
 
-import com.workshop.functional.SubscriberFilter;
 import com.workshop.functional.SubscriberAction;
+import com.workshop.functional.SubscriberFilter;
+import com.workshop.functional.SubscriberFilters;
+import com.workshop.model.Plan;
 import com.workshop.model.Subscriber;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotSame;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class SubscriberProcessorTest {
+class SubscriberProcessorTest {
+
+    private final SubscriberProcessor processor = new SubscriberProcessor();
 
     @Test
-    public void testFindSubscribersNoMatches() {
-        SubscriberProcessor processor = new SubscriberProcessor();
-        SubscriberFilter filter = (subscriber -> false);
-        List<Subscriber> result = processor.findSubscribers(Arrays.asList(
-                new Subscriber(1, "Alice", "Expire"),
-                new Subscriber(2, "Bob", "Not Expire")
-        ), filter);
+    void findSubscribersReturnsMatchingSubscribersInInputOrder() {
+        List<Subscriber> subscribers = exampleSubscribers();
 
-        assertTrue(result.isEmpty());
+        List<Subscriber> matching = processor.findSubscribers(
+                subscribers, subscriber -> subscriber.getId() % 2 == 0);
+
+        assertNotSame(subscribers, matching);
+        assertEquals(List.of(2, 4, 6), ids(matching));
     }
 
     @Test
-    public void testFindSubscribersOrderPreservation() {
-        SubscriberProcessor processor = new SubscriberProcessor();
-        SubscriberFilter filter = (subscriber -> true);
-        List<Subscriber> input = Arrays.asList(
-                new Subscriber(1, "Alice", "Expire"),
-                new Subscriber(2, "Bob", "Not Expire"),
-                new Subscriber(3, "Charlie", "Expire")
-        );
-        List<Subscriber> result = processor.findSubscribers(input, filter);
+    void findSubscribersReturnsEmptyListWhenThereAreNoMatches() {
+        List<Subscriber> subscribers = exampleSubscribers();
 
-        assertEquals(input, result);
+        List<Subscriber> matching = processor.findSubscribers(subscribers, subscriber -> false);
+
+        assertNotSame(subscribers, matching);
+        assertTrue(matching.isEmpty());
     }
 
     @Test
-    public void testApplyToMatchingOnlyMatches() {
-        SubscriberProcessor processor = new SubscriberProcessor();
-        SubscriberAction action = (subscriber -> new Subscriber(
-                subscriber.getId(),
-                "Processed",
-                "Expire"
-        ));
-        SubscriberFilter filter = (subscriber -> subscriber.getId() % 2 == 0);
-        List<Subscriber> input = Arrays.asList(
-                new Subscriber(1, "Alice", "Expire"),
-                new Subscriber(2, "Bob", "Not Expire"),
-                new Subscriber(3, "Charlie", "Expire")
-        );
-        List<Subscriber> result = processor.applyToMatching(input, filter, action);
+    void applyToMatchingRunsActionOnceForEachMatchAndLeavesNonmatchesAlone() {
+        List<Subscriber> subscribers = exampleSubscribers();
+        AtomicInteger filterCalls = new AtomicInteger();
+        AtomicInteger actionCalls = new AtomicInteger();
+        SubscriberFilter evenIds = subscriber -> {
+            filterCalls.incrementAndGet();
+            return subscriber.getId() % 2 == 0;
+        };
+        SubscriberAction deactivate = subscriber -> {
+            actionCalls.incrementAndGet();
+            subscriber.setActive(false);
+        };
 
-        assertEquals(1, result.size());
-        assertEquals(2, result.get(0).getId());
+        List<Subscriber> processed = processor.applyToMatching(subscribers, evenIds, deactivate);
+
+        assertNotSame(subscribers, processed);
+        assertEquals(List.of(2, 4, 6), ids(processed));
+        assertEquals(subscribers.size(), filterCalls.get());
+        assertEquals(3, actionCalls.get());
+        assertEquals(List.of(true, false, true, false, true, false, true),
+                subscribers.stream().map(Subscriber::isActive).toList());
     }
 
     @Test
-    public void testApplyToMatchingNoDuplicates() {
-        SubscriberProcessor processor = new SubscriberProcessor();
-        SubscriberAction action = (subscriber -> new Subscriber(
-                subscriber.getId(),
-                "Processed",
-                "Expire"
-        ));
-        SubscriberFilter filter = (subscriber -> subscriber.getId() % 2 == 0);
-        List<Subscriber> input = Arrays.asList(
-                new Subscriber(1, "Alice", "Expire"),
-                new Subscriber(2, "Bob", "Not Expire"),
-                new Subscriber(3, "Charlie", "Expire")
-        );
-        List<Subscriber> result = processor.applyToMatching(input, filter, action);
+    void scenario3FindsActiveAndExpiringSubscribers() {
+        List<Subscriber> subscribers = exampleSubscribers();
 
-        assertNotNull(result);
-        assertFalse(result == input); // New list identity
+        List<Subscriber> matching = processor.findSubscribers(
+                subscribers, SubscriberFilters.activeAndExpiring());
+
+        assertEquals(List.of(1, 2, 6), ids(matching));
+    }
+
+    private static List<Subscriber> exampleSubscribers() {
+        return new ArrayList<>(List.of(
+                new Subscriber(1, "alex@example.test", Plan.FREE, true, 0),
+                new Subscriber(2, "blair@example.test", Plan.BASIC, true, 1),
+                new Subscriber(3, "casey@example.test", Plan.PRO, true, 6),
+                new Subscriber(4, "devon@example.test", Plan.FREE, false, 0),
+                new Subscriber(5, "ellis@example.test", Plan.BASIC, false, 1),
+                new Subscriber(6, "frankie@example.test", Plan.PRO, true, 0),
+                new Subscriber(7, "gray@example.test", Plan.FREE, true, 2)));
+    }
+
+    private static List<Integer> ids(List<Subscriber> subscribers) {
+        return subscribers.stream().map(Subscriber::getId).toList();
     }
 }
