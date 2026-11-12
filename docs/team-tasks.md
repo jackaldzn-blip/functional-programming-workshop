@@ -1,8 +1,8 @@
-# Detailed team tasks — start here
+# Team implementation tasks
 
-This is the **rebalanced six-member assignment**. Every member contributes Java code and participates in testing. The workshop's Part 2 JUnit challenge is optional in the assignment; **our team has elected to complete it** and share its six scenarios.
+Each member owns Java code and related tests. The workshop's Part 2 JUnit challenge is optional; the team has agreed to implement its six scenarios across the assigned components.
 
-Before starting, read the [original workshop](../assignment/Functional_Programming_Workshop.md), [technical UML](technical-uml.md), [API contracts](contracts.md), [example data](example-scenarios.md) and [testing guide](testing-responsibilities.md). The starter initially contained empty Java class shells; use the current branches and PRs to confirm which components are now implemented.
+Before starting, read the [original workshop](../assignment/Functional_Programming_Workshop.md), [technical UML](technical-uml.md), [API contracts](contracts.md), [example data](example-scenarios.md) and [testing guide](testing-responsibilities.md). Check the latest `main` branch and open pull requests for current progress.
 
 | Member / owner | Java coding task | Tests and scenarios | Detailed brief |
 |---|---|---|---|
@@ -19,7 +19,7 @@ Before starting, read the [original workshop](../assignment/Functional_Programmi
 2. **Component work:** Members 2, 3 and 4 implement DAO, filters and actions, each with local unit tests.
 3. **Processing:** Member 5 implements and tests the processor after the functional interfaces are available.
 4. **Cross-component scenarios:** Members 3, 4 and 5 add their assigned workshop scenario assertions once `SubscriberProcessor` and other dependencies are merged. No one should change another member's test file without agreement.
-5. **Interactive demonstration and report:** Padma (Member 6) implements the approved console menu in `Main.java`, providing access to the workshop scenarios using the other members' APIs. She adds scenario 6 JUnit tests, manually checks valid/invalid menu input and in-session mutations, and assembles the report using evidence provided by all members.
+5. **Demonstration and reporting:** Member 6 connects the components in `Main.java`, verifies assigned scenario 6 and the agreed console behavior, and assembles everyone's documented contributions.
 6. **Final review:** Lead reviews PRs, resolves integration problems with owners, confirms six scenarios and nonzero JUnit test count, and approves the report.
 
 Work may be prepared on separate branches in parallel; **do not claim integration tests passed until all dependencies exist**.
@@ -36,4 +36,4 @@ Work may be prepared on separate branches in parallel; **do not claim integratio
 
 ## Instructor requirements vs team design
 
-The original workshop specifies six conceptual types, seven business rules and an optional six-scenario JUnit challenge. Additional helper classes, constructors, validation, in-memory DAO behavior, return conventions, sample records and Padma's **interactive console menu** are **team implementation decisions**, not instructions claimed to be in the workshop. The menu does not change the other members' coding or testing responsibilities.
+The original workshop specifies six conceptual types, seven business rules and an optional six-scenario JUnit challenge. Helper classes, validation, in-memory storage, sample data, return conventions and the console interface are **team design choices**. They do not change the original requirements or test ownership.
