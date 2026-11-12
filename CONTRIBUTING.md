@@ -1,0 +1,34 @@
+# Team contribution workflow
+
+**Repository:** https://github.com/jackaldzn-blip/functional-programming-workshop
+
+1. Confirm your full name and GitHub username to Member 1. The lead records them in [`TEAM.md`](TEAM.md) and assigns your Issue.
+2. Read your specific [member task brief](docs/team-tasks.md), the [Markdown technical UML](docs/technical-uml.md) and [contracts](docs/contracts.md).
+3. Clone repository, and create **your own branch from `main`**:
+
+```bash
+git clone https://github.com/jackaldzn-blip/functional-programming-workshop.git
+cd functional-programming-workshop
+git switch -c feature/your-task-name
+```
+
+4. Edit files in your assigned ownership area, commit your own changes and push branch:
+
+```bash
+git add .
+git commit -m "Implement assigned component"
+git push -u origin feature/your-task-name
+```
+
+5. Open a **Pull Request targeting `main`** and link your Issue. Include: what changed, requirements met, commands run, expected outcomes, limitations, and proof if available.
+6. Lead reviews your PR; fix requested changes on your branch. **Do not push directly to `main`** once initial setup is complete. The lead merges approved contributions.
+7. Share your PR link, 3–5 sentence contribution summary **and your actual test evidence** with Member 6 for the final report. Every member supplies content; Member 6 coordinates it.
+
+## Collaboration rules
+
+- Don't edit another member's class, signatures or tests without talking first.
+- Member 1 stabilizes the model first. DAO, filters and actions can then work in parallel; Member 5 processor follows the functional interfaces; Member 6 Main depends on all parts. Cross-component scenario tests should be verified only after dependencies merge.
+- UML lives in [`docs/technical-uml.md`](docs/technical-uml.md), **not in a separate exported image**.
+- Every member writes JUnit tests for their own component. **Six integrated scenario tests are distributed**: Member 3 scenarios 1–2; Member 4 scenarios 4–5; Member 5 scenario 3; Member 6 scenario 6. Member 6 also implements `Main.java` and assembles the **shared** final report using evidence provided by all six; see [testing guide](docs/testing-responsibilities.md). Everyone addresses bugs found in their own code.
+- No AI-generated or copied solution should be committed without understanding and team agreement; members are responsible for their implementation.
+- A passing compile with **0 tests** is not validation of the workshop behavior.

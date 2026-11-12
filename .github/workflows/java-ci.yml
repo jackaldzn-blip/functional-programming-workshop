@@ -1,0 +1,22 @@
+name: Java Build
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up JDK 25
+        uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '25'
+          cache: maven
+      - name: Compile and run any implemented tests
+        run: mvn -B --no-transfer-progress clean verify
+      # WARNING: At repository creation all Java types, including test classes,
+      # are empty. A green job is only a compilation check until real tests exist.

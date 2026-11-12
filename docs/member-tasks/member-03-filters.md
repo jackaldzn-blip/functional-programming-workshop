@@ -1,0 +1,40 @@
+# Member 3 — Functional filters + workshop scenarios 1 and 2
+
+**Name/username:** _fill from TEAM.md_  
+**Branch:** `feature/subscriber-filters`  
+**Owned:** `src/main/java/com/workshop/functional/SubscriberFilter.java`, `SubscriberFilters.java`, `src/test/java/com/workshop/SubscriberFiltersTest.java`.
+
+## Goal
+
+Implement the functional predicate interface and **all five** Part 1 selection rules. A filter returns `true` or `false` for a subscriber and **never changes** their state.
+
+## Build your component step by step
+
+1. Define `@FunctionalInterface SubscriberFilter` with **one** abstract method `boolean matches(Subscriber subscriber)`.
+2. In `SubscriberFilters`, define these static factories, each returning a lambda-compatible `SubscriberFilter`:
+   - `active()` → `isActive()` is true.
+   - `expiring()` → `monthsRemaining` is **0 or 1** (even if inactive).
+   - `activeAndExpiring()` → active AND months 0/1.
+   - `byPlan(Plan plan)` → subscriber plan equals the provided enum value.
+   - `paying()` → plan is BASIC or PRO (active flag irrelevant).
+3. Keep rules independent of printing, DAO storage or actions. Follow the exact signatures in [contracts](../contracts.md).
+4. Create unit tests in `SubscriberFiltersTest.java` covering all five rules and boundary values 0, 1 and 2 months. Verify none mutate the input subscriber.
+
+## Your Part 2 scenario tests (you own these)
+
+- **Scenario 1: Show active subscribers.** With [shared data](../example-scenarios.md), assert returned IDs are **1,2,3,6,7** in that order.
+- **Scenario 2: Show expiring subscriptions.** Assert returned IDs are **1,2,4,5,6**; confirm inactive IDs 4 and 5 still match because expiring does not require active.
+- Use `SubscriberProcessor.findSubscribers` to test these at the scenario level once Member 5's processor is available. Your independent predicate unit tests can be written earlier.
+- Include named `@Test` methods with assertions. No console-only tests.
+
+## Dependencies
+
+You need Member 1's model; integration-level scenario tests also need Member 5's processor. Ask the lead when API contracts differ rather than modifying colleagues' classes.
+
+## Definition of done
+
+- [ ] One-method functional interface; five correct filter factories.
+- [ ] Filter unit tests pass, including 0/1/2 and inactive boundary cases.
+- [ ] **Scenario 1 and 2** assertions pass after integration.
+- [ ] PR links to the task Issue, with actual test commands and results.
+- [ ] Send Member 6 summary, scenario outcomes, JUnit evidence and PR URL.
