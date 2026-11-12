@@ -14,7 +14,7 @@ public class SubscriberProcessor {
      */
     public List<Subscriber> findSubscribers(List<Subscriber> list, SubscriberFilter filter) {
         return list.stream()
-                .filter(filter::accept)
+                .filter(filter::matches)
                 .collect(Collectors.toList());
     }
 
@@ -24,8 +24,8 @@ public class SubscriberProcessor {
      */
     public List<Subscriber> applyToMatching(List<Subscriber> list, SubscriberFilter filter, SubscriberAction action) {
         return list.stream()
-                .filter(filter::accept)
-                .map(action::execute)
+                .filter(filter::matches)
+                .map(action::run)
                 .collect(Collectors.toList());
     }
 }
