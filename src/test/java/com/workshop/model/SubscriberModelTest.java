@@ -1,4 +1,4 @@
-package com.workshop;
+package com.workshop.model;
 
 import com.workshop.model.Plan;
 import com.workshop.model.Subscriber;
