@@ -43,4 +43,4 @@ Each member owns implementation and tests, works on a feature branch and submits
 - [Testing responsibilities](docs/testing-responsibilities.md), [shared sample cases](docs/example-scenarios.md) and [workshop coverage](docs/workshop-coverage.md)
 - [Contribution workflow](CONTRIBUTING.md) and [report template](docs/final-report-template.md)
 
-Detailed implementation instructions—including console behavior—belong in the relevant member brief, not in this project overview.
+Detailed implementation instructions and acceptance checks are in the individual member briefs.
