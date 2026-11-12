@@ -16,7 +16,22 @@ jobs:
           distribution: temurin
           java-version: '25'
           cache: maven
-      - name: Compile and run any implemented tests
-        run: mvn -B --no-transfer-progress clean verify
-      # WARNING: At repository creation all Java types, including test classes,
-      # are empty. A green job is only a compilation check until real tests exist.
+      - name: Build and run tests
+        run: mvn -B --no-transfer-progress test
+      - name: Verify tests were executed
+        run: |
+          python3 - <<'PY'
+          from glob import glob
+          from xml.etree import ElementTree
+
+          reports = glob("target/surefire-reports/TEST-*.xml")
+          if not reports:
+              raise SystemExit("No Surefire test reports were generated")
+
+          total = sum(int(ElementTree.parse(report).getroot().get("tests", "0"))
+                      for report in reports)
+          if total == 0:
+              raise SystemExit("Surefire generated reports, but no tests were executed")
+
+          print(f"Verified {total} test(s) ran.")
+          PY
