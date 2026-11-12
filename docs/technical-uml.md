@@ -2,6 +2,8 @@
 
 This Mermaid diagram shows the workshop's six conceptual types—`Subscriber`, `Plan`, `SubscriberDAO`, `SubscriberFilter`, `SubscriberAction` and `SubscriberProcessor`—alongside the team's supporting helpers and entry point. The additional elements are implementation choices, not extra instructor requirements.
 
+**Implementation note (12 November 2026):** the core components below are merged. The `Main` dependency arrows describe the **intended completed console design**; the current `Main.java` still prints sample data without invoking the full interactive workflow. See [project status](project-status.md). The optional `SubscriberActions.activate()` helper is implemented but not drawn as an original workshop rule.
+
 ```mermaid
 classDiagram
     direction LR

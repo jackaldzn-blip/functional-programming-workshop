@@ -44,7 +44,7 @@ Follow [testing responsibilities](../testing-responsibilities.md). Implement and
 
 ## Definition of done
 
-- [ ] All three UML operations implemented with correct types.
-- [ ] Null, empty, lookup miss, duplicate ID, ordered results covered with JUnit assertions.
-- [ ] No database needed; no duplicate stored IDs.
+- [x] All three UML operations implemented with correct types.
+- [x] Null, empty, lookup miss, duplicate ID, ordered results covered with JUnit assertions.
+- [x] No database needed; no duplicate stored IDs.
 - [ ] `mvn clean compile` passes with merged model; PR explains checks and design choice.

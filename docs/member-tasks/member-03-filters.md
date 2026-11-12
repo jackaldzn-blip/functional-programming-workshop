@@ -1,7 +1,7 @@
 # Member 3 — Jay — Functional filters + workshop scenarios 1 and 2
 
 **Assigned member:** Jay — [@JayB111](https://github.com/JayB111)  
-**Branch:** `feature/subscriber-filters`  
+**Merged branch:** `feature/subscriber-filter` ([PR #10](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/10)); use a **new branch/PR** for scenarios 1–2  
 **Owned:** `src/main/java/com/workshop/functional/SubscriberFilter.java`, `SubscriberFilters.java`, `src/test/java/com/workshop/functional/SubscriberFiltersTest.java`.
 
 ## Goal
@@ -24,7 +24,7 @@ Implement the functional predicate interface and **all five** Part 1 selection r
 
 - **Scenario 1: Show active subscribers.** With [shared data](../example-scenarios.md), assert returned IDs are **1,2,3,6,7** in that order.
 - **Scenario 2: Show expiring subscriptions.** Assert returned IDs are **1,2,4,5,6**; confirm inactive IDs 4 and 5 still match because expiring does not require active.
-- Use `SubscriberProcessor.findSubscribers` to test these at the scenario level once Member 5's processor is available. Your independent predicate unit tests can be written earlier.
+- Use the **now-merged** `SubscriberProcessor.findSubscribers` to test these scenarios. The independent predicate unit tests are already implemented and passing.
 - Include named `@Test` methods with assertions. No console-only tests.
 
 ## Dependencies
@@ -33,8 +33,8 @@ You need Member 1's model; integration-level scenario tests also need Member 5's
 
 ## Definition of done
 
-- [ ] One-method functional interface; five correct filter factories.
-- [ ] Filter unit tests pass, including 0/1/2 and inactive boundary cases.
+- [x] One-method functional interface; five correct filter factories.
+- [x] Filter unit tests pass, including 0/1/2 and inactive boundary cases.
 - [ ] **Scenario 1 and 2** assertions pass after integration.
 - [ ] PR links to the task Issue, with actual test commands and results.
 - [ ] Send Member 6 summary, scenario outcomes, JUnit evidence and PR URL.

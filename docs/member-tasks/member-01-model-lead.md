@@ -39,8 +39,8 @@ Follow [testing responsibilities](../testing-responsibilities.md). Implement and
 
 ## Definition of done
 
-- [ ] Three plan enum values; five private fields; correct constructor, getters and setters; readable `toString()` override.
-- [ ] Validation for invalid input; no subscription/business-rule logic in the model.
-- [ ] `mvn clean compile` succeeds once merged; Your own `SubscriberModelTest` passes.
-- [ ] Other members can compile against the model without modifying your class.
+- [x] Three plan enum values; five private fields; correct constructor, getters and setters; readable `toString()` override.
+- [x] Validation for invalid input; no subscription/business-rule logic in the model.
+- [x] `mvn clean compile` succeeds once merged; Your own `SubscriberModelTest` passes.
+- [x] Other members can compile against the model without modifying your class.
 - [ ] PR includes a short description and manual check performed.

@@ -15,6 +15,8 @@ Before starting, read the [original workshop](../assignment/Functional_Programmi
 
 ## Integration and test sequence
 
+**Progress:** steps 1–4 have been completed for the model and core components, including scenarios 3–5. The immediate work now is Jay's scenario tests 1–2, Padma's scenario 6 and console, then every member's report evidence and final acceptance. The ordered steps below remain the implementation workflow for reference.
+
 1. **Model first:** Member 1 implements and merges `Plan` and `Subscriber`, and freezes the agreed public API.
 2. **Component work:** Members 2, 3 and 4 implement DAO, filters and actions, each with local unit tests.
 3. **Processing:** Member 5 implements and tests the processor after the functional interfaces are available.

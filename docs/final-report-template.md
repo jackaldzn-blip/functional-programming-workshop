@@ -2,6 +2,8 @@
 
 **Every member supplies their own implementation summary, PR link and test evidence. Padma (Member 6) assembles this shared report and Anas (Team Lead) approves it.** Do not submit placeholders as results.
 
+**Verified draft baseline (12 November 2026):** [project status](project-status.md) records 48 passing tests on `main`. Scenarios 3–5 have named passing JUnit methods; scenarios 1–2 and 6, console checks and final member write-ups are **not yet complete**. Treat these entries as **preliminary evidence**, not proof that final submission has been accepted.
+
 ## 1. Cover
 
 - Project: Subscription List Management System
@@ -28,9 +30,9 @@ Document in-memory storage, validation, duplicate ID policy, `applyToMatching` r
 |---|---|---|---|---|
 | 1 — Active | IDs 1,2,3,6,7 (shared fixture) | _to fill_ | _to fill_ | Not verified |
 | 2 — Expiring | IDs 1,2,4,5,6 | _to fill_ | _to fill_ | Not verified |
-| 3 — Active + expiring | IDs 1,2,6 | _to fill_ | _to fill_ | Not verified |
-| 4 — Extend eligible paid | IDs 2,6; +3 months | _to fill_ | _to fill_ | Not verified |
-| 5 — Deactivate expired FREE | IDs 1,4 inactive | _to fill_ | _to fill_ | Not verified |
+| 3 — Active + expiring | IDs 1,2,6 | IDs 1,2,6 | `SubscriberProcessorTest.scenario3FindsActiveAndExpiringSubscribers` | Verified in 12 Nov `main` CI |
+| 4 — Extend eligible paid | IDs 2,6; +3 months | IDs 2,6; months 1→4 and 0→3 | `SubscriberActionsTest.scenario4ExtendsOnlyActivePayingExpiringSubscribers` | Verified in 12 Nov `main` CI |
+| 5 — Deactivate expired FREE | IDs 1,4 inactive | IDs 1,4 processed; inactive afterward | `SubscriberActionsTest.scenario5DeactivatesOnlyExpiredFreeSubscribers` | Verified in 12 Nov `main` CI |
 | 6 — By plan | FREE 1,4,7 / BASIC 2,5 / PRO 3,6 | _to fill_ | _to fill_ | Not verified |
 
 ## 6. Test results
@@ -43,16 +45,18 @@ Member ownership: scenarios **1–2 by Member 3**, **3 by Member 5**, **4–5 by
 - Failures/errors/skipped: _to fill_
 - Any known issues and resolutions: _to fill_
 
+**Known baseline evidence (not yet the final verification run):** GitHub Actions [run #43246869717](https://github.com/jackaldzn-blip/functional-programming-workshop/actions/runs/43246869717) executed `mvn -B --no-transfer-progress clean verify`: **48 tests; 0 failures, 0 errors, 0 skipped** on Java 25. The final report should include fresh verification after scenarios 1–2 and 6 and the console are completed.
+
 ## 7. Individual contributions
 
 | Member | Name | What they implemented | PR link |
 |---|---|---|---|
-| 1 | Anas (@jackaldzn-blip) | Model + lead duties | _ |
-| 2 | Veselina (@vlinakonsa) | DAO | _ |
-| 3 | Jay (@JayB111) | Filters | _ |
-| 4 | Tuku (@tukue) | Actions | _ |
-| 5 | Carl (@Matojotam) | Processor + its tests + scenario 3 | _ |
-| 6 | Padma (@Padmaqaauto) | Application entry point + scenario 6 + report coordination | _ |
+| 1 | Anas (@jackaldzn-blip) | Model + lead duties | [#1](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/1), [#4](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/4), [#9](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/9) |
+| 2 | Veselina (@vlinakonsa) | DAO | [#6](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/6) |
+| 3 | Jay (@JayB111) | Filters; scenarios 1–2 pending | [#10](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/10) |
+| 4 | Tuku (@tukue) | Actions; scenarios 4–5 in PR #11 | [#8](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/8), [#11](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/11) |
+| 5 | Carl (@Matojotam) | Processor + its tests + scenario 3 | [#11](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/11) |
+| 6 | Padma (@Padmaqaauto) | Initial application entry point; scenario 6, console and report pending | [#3](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/3) |
 
 ## 8. Lessons, limitations and conclusion
 

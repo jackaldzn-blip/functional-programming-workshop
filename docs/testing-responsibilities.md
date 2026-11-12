@@ -28,7 +28,7 @@ Use [example-scenarios.md](example-scenarios.md). Each test creates fresh `Subsc
 | **5 — Deactivate expired FREE subscribers** | Tuku (Member 4) | Only IDs `1,4` match; both end inactive; others unchanged |
 | **6 — Filter by plan** | Padma (Member 6) | FREE `1,4,7`; BASIC `2,5`; PRO `3,6`, checked independently |
 
-**Integration dependency:** Scenarios 3–6 require the processor and the filters/actions they exercise. Members 4 and 6 may draft tests but cannot verify them until these are merged; Member 3's scenarios may use the processor after it is merged for consistent integration-level validation.
+**Integration dependency resolved:** The processor, filters and actions are now merged in `main`. Jay can add scenarios 1–2 directly against `SubscriberProcessor`; Padma can add scenario 6. Tests in unmerged/closed PRs do **not** count toward `main` coverage.
 
 ## How to record evidence
 

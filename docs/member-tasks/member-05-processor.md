@@ -33,7 +33,7 @@ Requires Member 1 model and Member 3/4 functional interfaces. You can implement 
 
 ## Definition of done
 
-- [ ] Two UML methods implemented and behave as documented.
-- [ ] Unit tests cover order, no matches and action invoked once per match.
-- [ ] **Scenario 3** test passes with IDs 1,2,6.
-- [ ] Submit coding PR with actual verification and send Member 6 contribution evidence.
+- [x] Two UML methods implemented and behave as documented.
+- [x] Unit tests cover order, no matches and action invoked once per match.
+- [x] **Scenario 3** test passes with IDs 1,2,6.
+- [ ] PR #11 was merged with passing CI; **send Member 6 your personal implementation summary and actual test evidence** for the report.
