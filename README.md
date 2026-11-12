@@ -4,7 +4,7 @@
 
 A six-person Java 25 + Maven workshop for implementing the subscription list management system from the [original Lexicon assignment](assignment/Functional_Programming_Workshop.md).
 
-**All Java source and JUnit test class shells are deliberately empty.** The team implements the required methods and rules itself; the starter contains documentation, not solutions.
+**The original Java starter contained empty class shells; work is now progressing through individual member contributions.** Review the current source and Pull Requests for implementation status.
 
 ## Start here
 
@@ -26,13 +26,13 @@ A six-person Java 25 + Maven workshop for implementing the subscription list man
 | **3 — [Jay](https://github.com/JayB111) (@JayB111)** | `SubscriberFilter`, `SubscriberFilters` | Unit tests + **scenarios 1,2** | Five filter rules |
 | **4 — [Tuku](https://github.com/tukue) (@tukue)** | `SubscriberAction`, `SubscriberActions` | Unit tests + **scenarios 4,5** | Two actions |
 | **5 — [Carl](https://github.com/Matojotam) (@Matojotam)** | `SubscriberProcessor` | Unit tests + **scenario 3** | Processing integration |
-| **6 — [Padma](https://github.com/Padmaqaauto) (@Padmaqaauto)** | `Main` | **Scenario 6** | Demonstration + final report coordination |
+| **6 — [Padma](https://github.com/Padmaqaauto) (@Padmaqaauto)** | `Main` (interactive console menu) | **Scenario 6** + manual menu checks | User-facing demonstration + shared final report |
 
 **Report contributions are shared:** every member sends their own implementation explanation, PR URL, test evidence and limitations to Member 6. Padma (Member 6) compiles the final report; Anas (Member 1, Team Lead) approves it.
 
 ## Original requirements and design choices
 
-Part 1 requires six conceptual types and seven rules. Part 2 offers six **optional** JUnit test scenarios; the team elects to implement them across Members 3–6. Additional helpers (`SubscriberFilters`, `SubscriberActions`, `Main`), constructor details, storage and return semantics are documented **team design decisions**, not instructor-mandated features.
+Part 1 requires six conceptual types and seven rules. Part 2 offers six **optional** JUnit test scenarios; the team elects to implement them across Members 3–6. Additional helpers (`SubscriberFilters`, `SubscriberActions`, `Main`), constructor details, storage and return semantics are documented **team design decisions**, not instructor-mandated features. **The interactive console menu is an optional team-approved extension** owned by Padma; it does not change the workshop UML or the original JUnit scenario allocation.
 
 ## Environment
 
@@ -50,7 +50,11 @@ mvn clean verify
 mvn exec:java
 ```
 
-`mvn exec:java` cannot run until Member 6 implements `Main.main`. A successful `mvn clean verify` of an **empty starter** is only a compile check; **zero tests means no functionality has been verified**.
+`mvn exec:java` starts Padma's interactive menu once `Main.main` and the dependent classes are implemented. Check the actual JUnit test count when running `mvn clean verify`; successful compilation alone does not prove the workshop rules work.
+
+## Interactive console extension (Member 6 — Padma)
+
+Padma has agreed to make `Main.java` an **interactive terminal menu**, using a simple Java input loop. The menu offers: show all, active, expiring, active-and-expiring, filter by plan, paying subscribers, extend eligible active paying expiring subscriptions by **3 example months**, deactivate expired FREE subscribers, and exit (`0`). The menu should handle invalid input and keep changes during the current session. It must call the DAO, processor, filters and actions written by the other members rather than duplicate their rules. See [Padma's detailed task brief](docs/member-tasks/member-06-main-report.md) for acceptance checks.
 
 ## Integration order
 
