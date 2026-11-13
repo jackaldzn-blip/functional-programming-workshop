@@ -39,13 +39,13 @@ public class Main {
     public static List<Subscriber> createSampleSubscribers() {
 
         return new ArrayList<>(List.of(
-                new Subscriber(1, "alice@example.com", Plan.FREE, true, 0),
-                new Subscriber(2, "bob@example.com", Plan.BASIC, true, 1),
-                new Subscriber(3, "charlie@example.com", Plan.PRO, true, 6),
-                new Subscriber(4, "david@example.com", Plan.FREE, false, 0),
-                new Subscriber(5, "emma@example.com", Plan.BASIC, false, 1),
-                new Subscriber(6, "frank@example.com", Plan.PRO, true, 0),
-                new Subscriber(7, "grace@example.com", Plan.FREE, true, 4)
+                new Subscriber(1, "alex@example.test", Plan.FREE, true, 0),
+                new Subscriber(2, "blair@example.test", Plan.BASIC, true, 1),
+                new Subscriber(3, "casey@example.test", Plan.PRO, true, 6),
+                new Subscriber(4, "devon@example.test", Plan.FREE, false, 0),
+                new Subscriber(5, "ellis@example.test", Plan.BASIC, false, 1),
+                new Subscriber(6, "frankie@example.test", Plan.PRO, true, 0),
+                new Subscriber(7, "gray@example.test", Plan.FREE, true, 2)
         ));
     }
 
