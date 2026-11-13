@@ -66,6 +66,7 @@ Member ownership: scenarios **1–2 by Member 3**, **3 by Member 5**, **4–5 by
 - **Small deliverables, connected components:** Splitting the work into small, owned tasks helped the team make progress in parallel. Shared API contracts and sample data kept the components connected; integration tests showed how the model, filters, actions, and processor combine to build the application.
 - **Teamwork and communication:** Because tasks depend on one another, regular communication about progress, contracts, blockers, branch order, and test results was important. Coordinating these dependencies helped the team resolve integration issues together instead of treating each task as isolated work.
 - **Technical troubleshooting:** Compiler errors, failing CI assertions, and review comments helped identify mismatches. Checking the exact failing line and expected fixture state—including initially inactive subscribers—made fixes more reliable than guessing.
+- **Continuous integration:** Running the complete test suite in GitHub Actions for every pull request verifies that each change still compiles and works with the other components before it is merged. CI provided fast, shared feedback on dependency problems and test failures, helping the team catch integration issues early.
 
 ### Limitations and conclusion
 
