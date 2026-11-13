@@ -62,11 +62,11 @@ Member ownership: scenarios **1–2 by Member 3**, **3 by Member 5**, **4–5 by
 
 ### Lessons learned
 
-- **Streams and data processing:** `filter` selects elements, while `map` transforms each element and needs a returned value. Since `SubscriberAction.run` returns `void`, it belongs in `forEach`. Collecting matches before applying an action also makes it clear which subscribers are returned and keeps selection separate from mutation.
-- **Small deliverables, connected components:** Splitting the work into small, owned tasks helped the team make progress in parallel. Shared API contracts and sample data kept the components connected; integration tests showed how the model, filters, actions, and processor combine to build the application.
-- **Teamwork and communication:** Because tasks depend on one another, regular communication about progress, contracts, blockers, branch order, and test results was important. Coordinating these dependencies helped the team resolve integration issues together instead of treating each task as isolated work.
-- **Technical troubleshooting:** Compiler errors, failing CI assertions, and review comments helped identify mismatches. Checking the exact failing line and expected fixture state—including initially inactive subscribers—made fixes more reliable than guessing.
-- **Continuous integration and regression checks:** Each feature should build on the existing implementation, and the full test suite should run in GitHub Actions for every pull request. These regression checks verify that new changes preserve previously working behavior while adding new features, and catch compilation, dependency, or integration issues before merge.
+- **Streams and data processing:** I learned that `filter` selects elements, while `map` transforms elements and requires a return value. Because `SubscriberAction.run` returns `void`, I used `forEach` to apply it to collected matches, keeping selection separate from mutation.
+- **Small, connected deliverables:** As Member 4, I implemented subscriber actions as a focused component, then integrated them with Member 3's filters and Member 5's processor for scenarios 4 and 5. I learned that breaking work into small tasks is effective when each task follows shared interfaces and connects to the larger application.
+- **Communication and dependencies:** I learned to coordinate API signatures, merge readiness, blockers, and test results with the owners of dependent components. Clear communication helped me identify when integration tests depended on code that had not yet reached `main`.
+- **Technical troubleshooting:** I learned to use compiler errors, CI failures, and review feedback to locate mismatches. Checking the failing line and the fixture state—including subscribers that were already inactive—helped me make precise fixes.
+- **Continuous integration and regression checks:** I learned to run the complete test suite on every pull request so my new changes are checked against previous behavior. This helps verify that a feature builds on the existing implementation without introducing regressions, and surfaces integration issues before merge.
 
 ### Limitations and conclusion
 
