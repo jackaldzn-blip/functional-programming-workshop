@@ -54,13 +54,22 @@ Member ownership: scenarios **1–2 by Member 3**, **3 by Member 5**, **4–5 by
 | 1 | Anas (@jackaldzn-blip) | Model + lead duties | [#1](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/1), [#4](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/4), [#9](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/9) |
 | 2 | Veselina (@vlinakonsa-svg) | DAO | [#6](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/6) |
 | 3 | Jay (@JayB111) | Filters and scenarios 1–2 | [#10](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/10), [#18](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/18) |
-| 4 | Tuku (@tukue) | Actions and scenarios 4–5 | [#8](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/8), [#11](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/11) |
+| 4 | Tuku (@tukue) | Implemented `SubscriberAction`, extension and deactivation actions (plus an `activate` enhancement), component tests, and scenarios 4–5. Also helped resolve the processor integration issue by replacing `map(action::run)` with a collect-then-`forEach` flow and correcting the related test expectation. | [#8](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/8), [#11](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/11) |
 | 5 | Carl (@Matojotam) | Processor + its tests + scenario 3 | [#11](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/11) |
 | 6 | Padma (@Padmaqaauto) | Interactive console and scenario 6; report coordination pending | [#3](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/3), [#17](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/17) |
 
 ## 8. Lessons, limitations and conclusion
 
-Describe real challenges (integration, boundary cases, API coordination), what worked, and what was not implemented.
+### Lessons learned
+
+- **Streams and data processing:** `filter` selects elements, while `map` transforms each element and needs a returned value. Since `SubscriberAction.run` returns `void`, it belongs in `forEach`. Collecting matches before applying an action also makes it clear which subscribers are returned and keeps selection separate from mutation.
+- **Small deliverables, connected components:** Splitting the work into small, owned tasks helped the team make progress in parallel. Shared API contracts and sample data kept the components connected; integration tests showed how the model, filters, actions, and processor combine to build the application.
+- **Teamwork and communication:** Because tasks depend on one another, regular communication about progress, contracts, blockers, branch order, and test results was important. Coordinating these dependencies helped the team resolve integration issues together instead of treating each task as isolated work.
+- **Technical troubleshooting:** Compiler errors, failing CI assertions, and review comments helped identify mismatches. Checking the exact failing line and expected fixture state—including initially inactive subscribers—made fixes more reliable than guessing.
+
+### Limitations and conclusion
+
+Record remaining work and actual test evidence. Do not claim tests passed unless CI or a local test run confirms it.
 
 ## 9. References
 
