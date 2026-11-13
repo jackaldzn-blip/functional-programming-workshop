@@ -10,7 +10,7 @@ The exercise demonstrates object-oriented modeling and **functional programming*
 
 **Final report:** Padma's [Group 4 completion report](docs/final-report.md) consolidates member contributions, PR links, JUnit evidence, console screenshots and the team retrospective. Reviewed and approved through [PR #21](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/21).
 
-**Status:** Implementation, automated testing, documentation and final-report review are complete. The project is ready for workshop submission; see [TEAM.md](TEAM.md) for responsibilities.
+**Project status: Completed and submitted (13 November 2026).** All assigned implementation, tests, documentation and team-lead review are complete. Padma confirmed that she shared the approved final report and GitHub repository with instructors **Elnaz and Mehrdad** on behalf of Group 4. This records the team's submission, not an instructor grading or acceptance decision.
 
 ## Workshop scope
 
@@ -39,7 +39,7 @@ mvn clean verify
 mvn exec:java
 ```
 
-`mvn clean verify` compiles the project and runs implemented tests. `mvn exec:java` launches the current `Main` application. Functional coverage depends on which team contributions have been integrated; a successful build alone does not establish that every scenario is complete.
+`mvn clean verify` compiles the project and runs the JUnit suite; `mvn exec:java` launches the completed interactive `Main` application. The integrated Java 25 CI run verified **53 passing tests** across the completed project.
 
 ## Teamwork and documentation
 
@@ -49,6 +49,7 @@ Each member owns implementation and tests, works on a feature branch and submits
 - [Task allocations and individual briefs](docs/team-tasks.md)
 - [Technical UML](docs/technical-uml.md) and [Java API contracts](docs/contracts.md)
 - [Testing responsibilities](docs/testing-responsibilities.md), [shared sample cases](docs/example-scenarios.md) and [workshop coverage](docs/workshop-coverage.md)
-- [Contribution workflow](CONTRIBUTING.md) and [report template](docs/final-report-template.md)
+- [Final project report — Group 4](docs/final-report.md)
+- [Contribution workflow](CONTRIBUTING.md) and [reusable report template](docs/final-report-template.md)
 
 Detailed implementation instructions and acceptance checks are in the individual member briefs.

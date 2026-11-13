@@ -2,7 +2,7 @@
 
 **Every member supplies their own implementation summary, PR link and test evidence. Padma (Member 6) assembles this shared report and Anas (Team Lead) approves it.** Do not submit placeholders as results.
 
-**Verified implementation baseline (13 November 2026):** [README progress](../README.md#current-progress) records **53 passing tests on `main`** with scenarios 1–6 covered and the console merged. Padma has marked the manual console checks complete. This template is **not** the completed team report: console transcript, individual member write-ups and final approval are still required.
+**Template retained for reference.** The actual completed [Group 4 final report](final-report.md) includes the console evidence, six member contributions and approved results. Padma confirmed sharing the report and repository with instructors on 13 November 2026. The sections below remain a reusable template, **not** the submitted report.
 
 ## 1. Cover
 
@@ -45,7 +45,7 @@ Member ownership: scenarios **1–2 by Member 3**, **3 by Member 5**, **4–5 by
 - Failures/errors/skipped: **0/0/0**
 - Known issues and resolutions: _add member-authored account_
 
-**Verified CI evidence:** GitHub Actions [run #43396578998](https://github.com/jackaldzn-blip/functional-programming-workshop/actions/runs/43396578998) executed Java 25 `mvn -B --no-transfer-progress clean verify` after PR #17 merged: **53 tests passed, 0 failures, 0 errors, 0 skipped**. The report must still include actual manual console evidence, six individual write-ups and Team Lead approval.
+**Verified CI evidence:** GitHub Actions [run #43396578998](https://github.com/jackaldzn-blip/functional-programming-workshop/actions/runs/43396578998) executed Java 25 `mvn -B --no-transfer-progress clean verify` after PR #17 merged: **53 tests passed, 0 failures, 0 errors, 0 skipped**. The completed [final report](final-report.md) includes manual console evidence, member write-ups and Team Lead approval.
 
 ## 7. Individual contributions
 
@@ -56,7 +56,7 @@ Member ownership: scenarios **1–2 by Member 3**, **3 by Member 5**, **4–5 by
 | 3 | Jay (@JayB111) | Filters and scenarios 1–2 | [#10](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/10), [#18](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/18) |
 | 4 | Tuku (@tukue) | Actions and scenarios 4–5 | [#8](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/8), [#11](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/11) |
 | 5 | Carl (@Matojotam) | Processor + its tests + scenario 3 | [#11](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/11) |
-| 6 | Padma (@Padmaqaauto) | Interactive console and scenario 6; report coordination pending | [#3](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/3), [#17](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/17) |
+| 6 | Padma (@Padmaqaauto) | Interactive console, scenario 6 and completed report coordination | [#3](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/3), [#17](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/17) |
 
 ## 8. Lessons, limitations and conclusion
 

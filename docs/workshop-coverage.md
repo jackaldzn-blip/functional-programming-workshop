@@ -38,7 +38,7 @@ Member 5 combines filters and actions using the two required processor operation
 | 5. Deactivate expired FREE | **Tuku (4)** | `SubscriberActionsTest.java` | **Passed** via PR #11 |
 | 6. Filter by plan | **Padma (6)** | `PlanScenarioTest.java` | **Passed** via PR #17 |
 
-Each member tests their own component. Member 6 implemented the console and marked its manual checks complete; she still coordinates the shared report and must include the demonstration evidence. See [testing responsibilities](testing-responsibilities.md) and [team tasks](team-tasks.md).
+Each member tested their assigned component. Member 6 implemented the console, documented its manual checks and coordinated the approved [final report](final-report.md). Padma confirmed the report and repository were shared with instructors on 13 November 2026. See [testing responsibilities](testing-responsibilities.md) and [team tasks](team-tasks.md).
 
 ## Decisions made by our team, not required by instructor
 

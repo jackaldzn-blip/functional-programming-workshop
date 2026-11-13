@@ -119,3 +119,4 @@ All required model, DAO, filter, action, processor, menu and scenario dependenci
 - [x] Console and scenario 6 coding PR #17 was reviewed and merged by the Team Lead.
 - [x] Submitted `docs/final-report.md` with console evidence, JUnit results, member contributions and the retrospective in PR #21.
 - [x] Final report reviewed, approved and merged by the Team Lead (PR #21).
+- [x] Padma confirmed submitting/sharing the approved report and repository with instructors Elnaz and Mehrdad on behalf of Group 4 (13 November 2026).
