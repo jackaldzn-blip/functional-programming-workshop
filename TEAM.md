@@ -4,7 +4,7 @@ Six members contribute to the **Functional Programming Workshop** (Java 25). The
 
 | Member | Name | GitHub | Implementation | Tests | Other responsibility | Status |
 |---|---|---|---|---|---|---|
-| **1 — Lead** | Anas | [@jackaldzn-blip](https://github.com/jackaldzn-blip) | `Subscriber.java`, `Plan.java` | `SubscriberModelTest.java` | Coordination, reviews and integration | Model merged |
+| **1 — Lead** | Anas | [@jackaldzn-blip](https://github.com/jackaldzn-blip) | `Subscriber.java`, `Plan.java` | `SubscriberModelTest.java` | Coordination, reviews and integration | **Coding complete** — model/tests merged in [#1](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/1) and [#4](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/4); final report approval pending |
 | **2** | Veselina | [@vlinakonsa-svg](https://github.com/vlinakonsa-svg) | `SubscriberDAO.java` | `SubscriberDaoTest.java` | Data-access checks | DAO and tests merged |
 | **3** | Jay | [@JayB111](https://github.com/JayB111) | `SubscriberFilter.java`, `SubscriberFilters.java` | `SubscriberFiltersTest.java`; scenarios 1–2 | Selection rules | Filters + 15 tests merged in [#10](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/10); scenarios 1–2 merged in [#18](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/18) |
 | **4** | Tuku | [@tukue](https://github.com/tukue) | `SubscriberAction.java`, `SubscriberActions.java` | `SubscriberActionsTest.java`; scenarios 4–5 | Subscription updates | Actions merged in [#8](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/8); scenarios 4–5 passed via #11 |
