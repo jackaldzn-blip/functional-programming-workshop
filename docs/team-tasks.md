@@ -15,7 +15,7 @@ Before starting, read the [original workshop](../assignment/Functional_Programmi
 
 ## Integration and test sequence
 
-**Progress (13 November 2026):** all components, six workshop scenarios and the 0–8 console are merged and verified in Java 25 `main` CI (**53 tests passed**). The remaining deliverable is the shared final report with six members' evidence and Team Lead review. The sequence below documents the development workflow.
+**Progress (13 November 2026):** all components, six workshop scenarios and the 0–8 console are merged and verified in Java 25 `main` CI (**53 tests passed**). The shared [final report](final-report.md) has also been submitted, reviewed and approved through PR #21. The sequence below documents the development workflow.
 
 1. **Model first:** Member 1 implements and merges `Plan` and `Subscriber`, and freezes the agreed public API.
 2. **Component work:** Members 2, 3 and 4 implement DAO, filters and actions, each with local unit tests.

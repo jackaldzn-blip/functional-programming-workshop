@@ -8,9 +8,9 @@ The exercise demonstrates object-oriented modeling and **functional programming*
 
 **Verified 13 November 2026:** All core components, the six agreed JUnit workshop scenarios (**1–6**), and the interactive console menu (**0–8**) are merged into `main`. Java 25 GitHub Actions ran `mvn -B --no-transfer-progress clean verify`: **53 tests passed, 0 failures, 0 errors, 0 skipped** ([post-merge run](https://github.com/jackaldzn-blip/functional-programming-workshop/actions/runs/43396578998)). The console and scenario 6 were merged in [PR #17](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/17); scenarios 1–2 were merged in [PR #18](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/18).
 
-**Remaining:** The **shared final report** has not yet been submitted. Padma is coordinating a separate report PR; each team member should provide their own summary, PR link and actual test evidence. Padma has marked the manual console acceptance checks complete; the report still needs the demonstration transcript/evidence and Team Lead approval.
+**Final report:** Padma's [Group 4 completion report](docs/final-report.md) consolidates member contributions, PR links, JUnit evidence, console screenshots and the team retrospective. Reviewed and approved through [PR #21](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/21).
 
-**Next:** Review the final report and evidence before submission. See [TEAM.md](TEAM.md) for responsibilities.
+**Status:** Implementation, automated testing, documentation and final-report review are complete. The project is ready for workshop submission; see [TEAM.md](TEAM.md) for responsibilities.
 
 ## Workshop scope
 

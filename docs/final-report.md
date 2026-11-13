@@ -11,7 +11,7 @@
 > **Submission Date:** 13-11-2026  
 > **Repository:** [Functional Programming Workshop](https://github.com/jackaldzn-blip/functional-programming-workshop)  
 > **Implementation Status:** Completed  
-> **Report Status:** Prepared for final review
+> **Report Status:** Approved by Team Lead upon merge of PR #21
 
 ---
 
@@ -921,7 +921,7 @@ docs/
 │           ├── SubscriberActions.png
 │           ├── SubscriberDAO.png
 │           └── SubscriberFilters.png
-└── Group-4-Project-Completion-Report.md
+└── final-report.md
 ```
 
 The report uses relative image paths so that screenshots can be displayed directly on GitHub when the report and evidence folders are committed to the repository.
@@ -976,7 +976,7 @@ The application is configured to run through the Maven Exec plugin using `com.wo
 - [x] Tukue's contribution and lessons learned included.
 - [x] Pull request register updated, including PR #22's closed status.
 - [x] Final member evidence consolidated.
-- [ ] Final Team Lead approval.
+- [x] Final Team Lead approval (PR #21).
 
 ---
 
@@ -1047,7 +1047,7 @@ The following repository documents provide additional information about the proj
 | Report Version | 1.0 |
 | Project | Functional Programming |
 | Implementation Status | Completed |
-| Report Approval | Pending Team Lead Review |
+| Report Approval | Approved by Team Lead (PR #21) |
 
 ---
 
