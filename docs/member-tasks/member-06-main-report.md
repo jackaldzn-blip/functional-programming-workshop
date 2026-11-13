@@ -1,7 +1,7 @@
 # Member 6 — Padma — Interactive console, scenario 6 and report coordination
 
 **Assigned member:** Padma — [@Padmaqaauto](https://github.com/Padmaqaauto)  
-**Merged work:** initial entry point in [PR #3](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/3); interactive menu and scenario 6 in [PR #17](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/17). The final report remains a separate deliverable.  
+**Merged work:** initial entry point in [PR #3](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/3); interactive menu and scenario 6 in [PR #17](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/17). The shared [final report](../final-report.md) was approved and merged via [PR #21](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/21).  
 **Owned:** `src/main/java/com/workshop/Main.java`, `src/test/java/com/workshop/PlanScenarioTest.java`, `docs/final-report.md` (created from the template).
 
 ## Goal
@@ -107,7 +107,7 @@ Jay, Tuku and Carl implement workshop scenarios 1–5 in their own test classes.
 
 ## Dependencies
 
-All required model, DAO, filter, action, processor, menu and scenario dependencies are **now merged**. Java 25 CI verifies 53 JUnit tests on `main`. Padma has marked manual console acceptance checks complete; include the actual output or a transcript in the final report, since JUnit alone does not verify interactive operation.
+All required model, DAO, filter, action, processor, menu and scenario dependencies are **now merged**. Java 25 CI verifies 53 JUnit tests on `main`. Padma marked manual console acceptance checks complete and included screenshots for menu options 0–8 and the three plan selections in the final report. JUnit alone does not verify interactive operation.
 
 ## Definition of done
 
@@ -117,5 +117,5 @@ All required model, DAO, filter, action, processor, menu and scenario dependenci
 - [x] Java 25 `mvn exec:java` and `mvn clean verify` run successfully after integration, with actual evidence.
 - [x] All six workshop scenarios are supported through the menu; no teammate's rules or tests have been duplicated.
 - [x] Console and scenario 6 coding PR #17 was reviewed and merged by the Team Lead.
-- [ ] Submit `docs/final-report.md` with the console evidence, real tests, six member contributions and limitations via a separate PR.
-- [ ] Final report reviewed and approved by the Team Lead.
+- [x] Submitted `docs/final-report.md` with console evidence, JUnit results, member contributions and the retrospective in PR #21.
+- [x] Final report reviewed, approved and merged by the Team Lead (PR #21).
