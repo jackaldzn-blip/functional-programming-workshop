@@ -8,7 +8,7 @@ No single member owns all testing. **Each developer unit-tests their own code**,
 |---|---|---|---|
 | Anas (Member 1) | `SubscriberModelTest.java` | Fields, getters/setters, valid/invalid constructor arguments, nonnegative remaining months | None — model tests |
 | Veselina (Member 2) | `SubscriberDaoTest.java` | Save new/existing ID, findAll order and copy, findById found/missing, null save | None — DAO tests |
-| Jay (Member 3) | `SubscriberFiltersTest.java` | Five filter factories, zero/one/two-month boundary, inactive cases | **1 — Active; 2 — Expiring** |
+| Jay (Member 3) | `SubscriberFiltersTest.java` (unit); `SubscriberProcessorTest.java` (scenario assertions) | Five filter factories, boundary and inactive cases | **1 — Active; 2 — Expiring** |
 | Tuku (Member 4) | `SubscriberActionsTest.java` | Extend, invalid duration, deactivate, repeat action, no premature mutation | **4 — Extend eligible paid; 5 — Deactivate expired FREE** |
 | Carl (Member 5) | `SubscriberProcessorTest.java` | Selection order, no matches, only matching mutations, once-per-match action | **3 — Active AND expiring** |
 | Padma (Member 6) | `PlanScenarioTest.java` | By-plan selection through processor using each enum value; manual console menu acceptance checks | **6 — Filter by plan** |
@@ -28,7 +28,7 @@ Use [example-scenarios.md](example-scenarios.md). Each test creates fresh `Subsc
 | **5 — Deactivate expired FREE subscribers** | Tuku (Member 4) | Only IDs `1,4` match; both end inactive; others unchanged |
 | **6 — Filter by plan** | Padma (Member 6) | FREE `1,4,7`; BASIC `2,5`; PRO `3,6`, checked independently |
 
-**Integration dependency resolved:** The processor, filters and actions are now merged in `main`. Jay can add scenarios 1–2 directly against `SubscriberProcessor`; Padma can add scenario 6. Tests in unmerged/closed PRs do **not** count toward `main` coverage.
+**Verified on 13 November 2026:** All six scenarios are merged into `main`. Jay's scenarios 1–2 are in `SubscriberProcessorTest.java` (PR #18); Padma's scenario 6 is in root-package `PlanScenarioTest.java` (PR #17). GitHub Actions ran 53 tests successfully on `main` ([run](https://github.com/jackaldzn-blip/functional-programming-workshop/actions/runs/43396578998)).
 
 ## How to record evidence
 

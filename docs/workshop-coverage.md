@@ -1,6 +1,6 @@
 # Workshop requirements coverage
 
-This maps the [original assignment](../assignment/Functional_Programming_Workshop.md) to team responsibilities. It distinguishes original requirements from the team's implementation. For the verified **12 November 2026** progress baseline, see [README progress](../README.md#current-progress-12-november-2026): all six conceptual types and seven rules are implemented and merged; 48 JUnit tests pass on `main`.
+This maps the [original assignment](../assignment/Functional_Programming_Workshop.md) to team responsibilities. It distinguishes original requirements from the team's implementation. For the verified **13 November 2026** progress baseline, see [README progress](../README.md#current-progress): all six conceptual types, seven rules, six scenario tests and the console are merged; **53 JUnit tests passed** on `main`.
 
 ## Original conceptual UML
 
@@ -15,7 +15,7 @@ This maps the [original assignment](../assignment/Functional_Programming_Worksho
 
 ## Part 1 — All seven required rules
 
-| Rule | Implementation owner | Planned method |
+| Rule | Implementation owner | Implemented method |
 |---|---|---|
 | Active | 3 | `SubscriberFilters.active()` |
 | Expiring (0/1 month) | 3 | `SubscriberFilters.expiring()` |
@@ -29,16 +29,16 @@ Member 5 combines filters and actions using the two required processor operation
 
 ## Part 2 — Six OPTIONAL JUnit challenge scenarios (team elected to complete)
 
-| Original scenario | JUnit owner | Test file | Current `main` status (12 Nov 2026) |
+| Original scenario | JUnit owner | Test file | Current `main` status (13 Nov 2026) |
 |---|---|---|---|
-| 1. Show active | **Jay (3)** | `SubscriberFiltersTest.java` | **Pending integrated assertion** |
-| 2. Show expiring | **Jay (3)** | `SubscriberFiltersTest.java` | **Pending integrated assertion** |
+| 1. Show active | **Jay (3)** | `SubscriberProcessorTest.java` | **Passed** via PR #18 |
+| 2. Show expiring | **Jay (3)** | `SubscriberProcessorTest.java` | **Passed** via PR #18 |
 | 3. Show active and expiring | **Carl (5)** | `SubscriberProcessorTest.java` | **Passed** via PR #11 |
 | 4. Extend active, paying, expiring | **Tuku (4)** | `SubscriberActionsTest.java` | **Passed** via PR #11 |
 | 5. Deactivate expired FREE | **Tuku (4)** | `SubscriberActionsTest.java` | **Passed** via PR #11 |
-| 6. Filter by plan | **Padma (6)** | `PlanScenarioTest.java` | **Pending**; PR #13 closed unmerged |
+| 6. Filter by plan | **Padma (6)** | `PlanScenarioTest.java` | **Passed** via PR #17 |
 
-Each member tests their own component. Member 6 also verifies the application demonstration and coordinates the shared report. See [testing responsibilities](testing-responsibilities.md) and [team tasks](team-tasks.md).
+Each member tests their own component. Member 6 implemented the console and marked its manual checks complete; she still coordinates the shared report and must include the demonstration evidence. See [testing responsibilities](testing-responsibilities.md) and [team tasks](team-tasks.md).
 
 ## Decisions made by our team, not required by instructor
 
