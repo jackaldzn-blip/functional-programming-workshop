@@ -1,7 +1,7 @@
 # Member 3 — Jay — Functional filters + workshop scenarios 1 and 2
 
 **Assigned member:** Jay — [@JayB111](https://github.com/JayB111)  
-**Merged branch:** `feature/subscriber-filter` ([PR #10](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/10)); use a **new branch/PR** for scenarios 1–2  
+**Merged work:** filters in [PR #10](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/10); scenarios 1–2 in [PR #18](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/18)  
 **Owned:** `src/main/java/com/workshop/functional/SubscriberFilter.java`, `SubscriberFilters.java`, `src/test/java/com/workshop/functional/SubscriberFiltersTest.java`.
 
 ## Goal
@@ -35,6 +35,6 @@ You need Member 1's model; integration-level scenario tests also need Member 5's
 
 - [x] One-method functional interface; five correct filter factories.
 - [x] Filter unit tests pass, including 0/1/2 and inactive boundary cases.
-- [ ] **Scenario 1 and 2** assertions pass after integration.
-- [ ] PR links to the task Issue, with actual test commands and results.
+- [x] **Scenario 1 and 2** assertions pass after integration in `SubscriberProcessorTest.java` (PR #18).
+- [x] Both coding PRs are merged; Java 25 `main` CI verified 53 project tests on 13 November 2026.
 - [ ] Send Member 6 summary, scenario outcomes, JUnit evidence and PR URL.

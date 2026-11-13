@@ -2,7 +2,7 @@
 
 The six assignments are now confirmed in [TEAM.md](../TEAM.md). Each member should review their name, GitHub username, coding task and test ownership there.
 
-The project is now in **final integration and report preparation**. The [README progress section](../README.md#current-progress-12-november-2026) identifies remaining work; merged PRs and owners are recorded in [TEAM.md](../TEAM.md). These confirmed assignments are unchanged; this page is not a new task allocation.
+The project is now in **final report preparation**: all components, six scenarios and the console are merged, with 53 passing tests on `main`. The [README progress section](../README.md#current-progress) identifies the outstanding report; owners are recorded in [TEAM.md](../TEAM.md). These confirmed assignments are unchanged; this page is not a new task allocation.
 
 If you notice an error, message Anas (Team Lead) with the correct information before starting. Do not add personal contact details to this public repository.
 

@@ -4,11 +4,13 @@ A six-member **Java 25 / Maven** project implementing a subscription list manage
 
 The exercise demonstrates object-oriented modeling and **functional programming** through reusable selection filters, actions and a processor. Development is shared across the team; see [TEAM.md](TEAM.md) for owners and progress.
 
-## Current progress (12 November 2026)
+## Current progress
 
-- **Completed:** All five core components merged; Java 25 CI passed **48 tests** on `main`. Workshop scenarios **3–5** are verified.
-- **Remaining:** Jay — scenario tests **1–2**; Padma — scenario **6**, interactive console menu and final report. All members should send Padma their contribution summaries and actual test evidence.
-- **Next:** Submit remaining work by PR for team-lead review. See [TEAM.md](TEAM.md) for member responsibilities.
+**Verified 13 November 2026:** All core components, the six agreed JUnit workshop scenarios (**1–6**), and the interactive console menu (**0–8**) are merged into `main`. Java 25 GitHub Actions ran `mvn -B --no-transfer-progress clean verify`: **53 tests passed, 0 failures, 0 errors, 0 skipped** ([post-merge run](https://github.com/jackaldzn-blip/functional-programming-workshop/actions/runs/43396578998)). The console and scenario 6 were merged in [PR #17](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/17); scenarios 1–2 were merged in [PR #18](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/18).
+
+**Remaining:** The **shared final report** has not yet been submitted. Padma is coordinating a separate report PR; each team member should provide their own summary, PR link and actual test evidence. Padma has marked the manual console acceptance checks complete; the report still needs the demonstration transcript/evidence and Team Lead approval.
+
+**Next:** Review the final report and evidence before submission. See [TEAM.md](TEAM.md) for responsibilities.
 
 ## Workshop scope
 

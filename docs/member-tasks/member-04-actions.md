@@ -31,7 +31,7 @@ Unit tests depend on Member 1 model. The two scenario tests additionally need Me
 ## Definition of done
 
 - [x] One-method action functional interface; extension and deactivation actions. An additional `activate()` action is also implemented.
-- [x] Unit tests and integration scenarios pass: **9 action tests** within **48 project tests**, 0 failures, in Java 25 `main` CI (12 November 2026).
+- [x] Unit tests and integration scenarios pass: **9 action tests** within **53 project tests**, 0 failures, in Java 25 `main` CI (13 November 2026).
 - [x] **Scenario 4 and 5** JUnit assertions pass with all nonmatching subscribers untouched (merged through PR #11).
 - [ ] Provide Padma a complete personal implementation summary and verified evidence for the shared report. PR #8's brief description does not replace that contribution.
 - [ ] Send Member 6 technical summary, test evidence, and PR URL.

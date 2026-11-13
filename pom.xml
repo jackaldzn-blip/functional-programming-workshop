@@ -7,7 +7,7 @@
     <artifactId>functional-programming-workshop</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>Functional Programming Workshop</name>
-    <description>Six-member team starter project; business logic intentionally unfinished.</description>
+    <description>Six-member Java 25 subscription-management workshop with filters, actions, a console and JUnit scenarios.</description>
     <properties>
         <maven.compiler.release>25</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

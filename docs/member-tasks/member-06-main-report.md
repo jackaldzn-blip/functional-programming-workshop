@@ -1,7 +1,7 @@
 # Member 6 — Padma — Interactive console, scenario 6 and report coordination
 
 **Assigned member:** Padma — [@Padmaqaauto](https://github.com/Padmaqaauto)  
-**Initial merged branch:** `feature/main` ([PR #3](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/3)); create a new branch/PR for unfinished work  
+**Merged work:** initial entry point in [PR #3](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/3); interactive menu and scenario 6 in [PR #17](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/17). The final report remains a separate deliverable.  
 **Owned:** `src/main/java/com/workshop/Main.java`, `src/test/java/com/workshop/PlanScenarioTest.java`, `docs/final-report.md` (created from the template).
 
 ## Goal
@@ -12,7 +12,7 @@ Build a **simple interactive Java console menu** for the workshop using the DAO,
 
 ## Part A — Interactive console application in Main.java
 
-Extend the existing Java `public static void main(String[] args)` entry point to display the following menu repeatedly. You may keep the **12-subscriber demonstration list** already present in `Main.java`, or use the [shared seven-subscriber dataset](../example-scenarios.md). The **seven-record shared fixture** is required for the specific expected-ID assertions in scenario tests; do not silently compare the 12-record demo list against those seven-record expectations.
+The merged Java `public static void main(String[] args)` entry point displays the following menu repeatedly. It uses the [shared seven-subscriber dataset](../example-scenarios.md) so the demonstration and scenario tests refer to the same records.
 
 ```text
 === Subscription Management System ===
@@ -58,7 +58,7 @@ Enter your choice:
 
 ### Example initial results (before any changes)
 
-**For the shared seven-record fixture only**, using the documented [shared dataset](../example-scenarios.md) (the existing 12-record `Main` demo will give different IDs):
+**For the seven-record fixture used by the merged `Main`**, as documented in [shared data](../example-scenarios.md):
 
 - Active IDs: **1,2,3,6,7**
 - Expiring IDs (0/1 month): **1,2,4,5,6**
@@ -107,7 +107,7 @@ Jay, Tuku and Carl implement workshop scenarios 1–5 in their own test classes.
 
 ## Dependencies
 
-All required model, DAO, filter, action and processor dependencies are **now merged**. Implement the menu against these APIs and record real manual acceptance evidence; a passing compilation by itself does not prove the menu works.
+All required model, DAO, filter, action, processor, menu and scenario dependencies are **now merged**. Java 25 CI verifies 53 JUnit tests on `main`. Padma has marked manual console acceptance checks complete; include the actual output or a transcript in the final report, since JUnit alone does not verify interactive operation.
 
 ## Definition of done
 
@@ -116,5 +116,6 @@ All required model, DAO, filter, action and processor dependencies are **now mer
 - [x] `PlanScenarioTest.java` asserts all three plan categories (workshop scenario 6).
 - [x] Java 25 `mvn exec:java` and `mvn clean verify` run successfully after integration, with actual evidence.
 - [x] All six workshop scenarios are supported through the menu; no teammate's rules or tests have been duplicated.
-- [ ] Shared final report includes the console extension, real tests, member contributions and remaining limitations.
-- [ ] Pull Request is reviewed and the report approved by the Team Lead.
+- [x] Console and scenario 6 coding PR #17 was reviewed and merged by the Team Lead.
+- [ ] Submit `docs/final-report.md` with the console evidence, real tests, six member contributions and limitations via a separate PR.
+- [ ] Final report reviewed and approved by the Team Lead.

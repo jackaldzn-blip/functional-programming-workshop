@@ -36,4 +36,5 @@ Requires Member 1 model and Member 3/4 functional interfaces. You can implement 
 - [x] Two UML methods implemented and behave as documented.
 - [x] Unit tests cover order, no matches and action invoked once per match.
 - [x] **Scenario 3** test passes with IDs 1,2,6.
-- [ ] PR #11 was merged with passing CI; **send Member 6 your personal implementation summary and actual test evidence** for the report.
+- [x] PR #11 merged with passing CI; scenario 3 is verified on `main`.
+- [ ] Send Member 6 your personal implementation summary and actual test evidence for the report.
