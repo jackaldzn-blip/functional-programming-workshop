@@ -1,7 +1,8 @@
 # Member 1 — Anas — Subscriber model, Plan enum and team lead
 
 **Assigned member:** Anas — [@jackaldzn-blip](https://github.com/jackaldzn-blip)  
-**Suggested branch:** `feature/subscriber-model`  
+**Coding status:** Completed; team-lead approval of the separate final report remains pending.  
+**Merged work:** [PR #1](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/1) (model and tests) and [PR #4](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/4) (`toString()` and two additional tests)  
 **Edit only:** `src/main/java/com/workshop/model/Subscriber.java`, `Plan.java`, `src/test/java/com/workshop/model/SubscriberModelTest.java` (plus team coordination docs).
 
 ## Your goal
@@ -43,4 +44,6 @@ Follow [testing responsibilities](../testing-responsibilities.md). Implement and
 - [x] Validation for invalid input; no subscription/business-rule logic in the model.
 - [x] `mvn clean compile` succeeds once merged; Your own `SubscriberModelTest` passes.
 - [x] Other members can compile against the model without modifying your class.
-- [ ] PR includes a short description and manual check performed.
+- [x] PR includes a short description and manual check performed (PR #1 documents JDK 21 compilation and standalone model assertion/smoke checks; PR #4 documents the additional `toString()` tests).
+
+**Verification evidence:** Java 25 post-integration GitHub Actions [run #43396578998](https://github.com/jackaldzn-blip/functional-programming-workshop/actions/runs/43396578998) passed **53 tests, 0 failures** (including all 12 model tests). The earlier JDK 21 standalone smoke checks are recorded in [PR #1](https://github.com/jackaldzn-blip/functional-programming-workshop/pull/1); they are contributor-reported manual evidence, distinct from Java 25 CI. **Final team report review is a separate pending team-lead responsibility.**
