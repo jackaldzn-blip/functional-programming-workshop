@@ -298,6 +298,7 @@ The project was divided into six areas of responsibility. Each member owned a sp
 - Identified the missing `toString()` override during early integration and communicated the issue to Anas.
 - Participated in pull-request reviews and integration discussions.
 - Suggested reviewing the UML before task allocation.
+- Reviewed the `SubscriberProcessor` implementation and identified the incompatibility of using `Stream.map()` with the void-returning `SubscriberAction.run()` method. Suggested using `forEach(action::run)` after collecting matching subscribers, providing technical feedback through a GitHub PR review comment to improve the implementation.
 - Suggested assigning clear ownership of the Main class and console application.
 - Recommended consistent branch naming conventions.
 - Coordinated the preparation of the project summary and completion report.
