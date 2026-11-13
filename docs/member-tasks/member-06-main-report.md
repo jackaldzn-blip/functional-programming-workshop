@@ -74,14 +74,14 @@ After an action runs, later menu results may change. The IDs above describe the 
 
 After all dependencies are integrated, run `mvn exec:java` and verify:
 
-- [ ] A menu appears and returns after selecting option `1`.
-- [ ] Options `2`, `3`, `4` and `6` show the correct initial subscribers.
-- [ ] Option `5` accepts each of `FREE`, `BASIC` and `PRO` and rejects an invalid plan without exiting.
-- [ ] Option `7` changes only eligible active paying expiring subscribers by +3 months.
-- [ ] Option `8` deactivates only expired FREE subscribers.
-- [ ] Option `1` after an action reflects updated in-session subscriber state.
-- [ ] An unknown number and nonnumeric input do not crash the application.
-- [ ] Option `0` exits normally.
+- [x] A menu appears and returns after selecting option `1`.
+- [x] Options `2`, `3`, `4` and `6` show the correct initial subscribers.
+- [x] Option `5` accepts each of `FREE`, `BASIC` and `PRO` and rejects an invalid plan without exiting.
+- [x] Option `7` changes only eligible active paying expiring subscribers by +3 months.
+- [x] Option `8` deactivates only expired FREE subscribers.
+- [x] Option `1` after an action reflects updated in-session subscriber state.
+- [x] An unknown number and nonnumeric input do not crash the application.
+- [x] Option `0` exits normally.
 
 Record **actual** outputs or a short console transcript for the final report. The console is an **extra team-agreed feature**, not an instructor-mandated UI requirement.
 
@@ -111,10 +111,10 @@ Your `Main` functionality requires the model, DAO, filters, actions and processo
 
 ## Definition of done
 
-- [ ] All options `0–8` work through the documented menu and invoke the existing components.
-- [ ] Invalid input is handled; action effects persist during the current session.
-- [ ] `PlanScenarioTest.java` asserts all three plan categories (workshop scenario 6).
-- [ ] Java 25 `mvn exec:java` and `mvn clean verify` run successfully after integration, with actual evidence.
-- [ ] All six workshop scenarios are supported through the menu; no teammate's rules or tests have been duplicated.
-- [ ] Shared final report includes the console extension, real tests, member contributions and remaining limitations.
+- [x] All options `0–8` work through the documented menu and invoke the existing components.
+- [x] Invalid input is handled; action effects persist during the current session.
+- [x] `PlanScenarioTest.java` asserts all three plan categories (workshop scenario 6).
+- [x] Java 25 `mvn exec:java` and `mvn clean verify` run successfully after integration, with actual evidence.
+- [x] All six workshop scenarios are supported through the menu; no teammate's rules or tests have been duplicated.
+- [] Shared final report includes the console extension, real tests, member contributions and remaining limitations.
 - [ ] Pull Request is reviewed and the report approved by the Team Lead.
