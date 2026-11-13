@@ -73,6 +73,24 @@ class SubscriberProcessorTest {
 
         assertEquals(List.of(1, 2, 6), ids(matching));
     }
+    @Test
+    void scenario1FindsActiveSubscribers() {
+        List<Subscriber> subscribers = exampleSubscribers();
+
+        List<Subscriber> matching = processor.findSubscribers(
+                subscribers, SubscriberFilters.active());
+
+        assertEquals(List.of(1, 2, 3, 6, 7), ids(matching));
+    }
+    @Test
+    void scenario2FindsExpiringSubscribers() {
+        List<Subscriber> subscribers = exampleSubscribers();
+
+        List<Subscriber> matching = processor.findSubscribers(
+                subscribers, SubscriberFilters.expiring());
+
+        assertEquals(List.of(1, 2, 4, 5, 6), ids(matching));
+    }
 
     private static List<Subscriber> exampleSubscribers() {
         return new ArrayList<>(List.of(
